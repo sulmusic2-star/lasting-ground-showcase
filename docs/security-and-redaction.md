@@ -10,7 +10,7 @@ This public repository is intentionally sanitized.
 - exact validation thresholds
 - private support-depth promotion rules
 - customer/property records
-- private town pack internals
+- non-public local-pack implementation details
 - operational launch/wave playbooks
 - business strategy docs
 

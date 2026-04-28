@@ -73,8 +73,8 @@ This showcase includes simplified examples:
 ## What is intentionally not included
 
 - production source code
-- source acquisition scripts
-- private town pack internals
+- non-public collection tooling
+- non-public local-pack implementation details
 - private validation datasets
 - customer/property records
 - credentials, API keys, or deployment config
