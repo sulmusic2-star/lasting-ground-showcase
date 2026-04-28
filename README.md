@@ -4,6 +4,8 @@
 
 This repository is intentionally a **sanitized portfolio case study**, not the private production source. It shows the product architecture, evidence model, validation posture, and sample artifact shape without exposing private implementation details, source-acquisition methods, credentials, or operational playbooks.
 
+Live demo: https://sulmusic2-star.github.io/lasting-ground-showcase/
+
 ## What Lasting Ground does
 
 Lasting Ground turns fragmented public and official property context into structured review artifacts for homeowners, buyers, and local partners.

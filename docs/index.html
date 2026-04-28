@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lasting Ground Showcase</title>
+  <meta name="description" content="Public fake-data demo for Lasting Ground, a source-backed property review system." />
+  <style>
+    :root{--bg:#f7f1e8;--ink:#17201a;--muted:#647067;--panel:#fffaf2;--green:#355e3b;--gold:#b8872f;--blue:#315e75;--line:#dfd3c2;--bad:#9f3a38}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fbf6ef,#eee2d2);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}.wrap{max-width:1180px;margin:0 auto;padding:28px}a{color:var(--green);font-weight:750}.hero{display:grid;grid-template-columns:1fr .9fr;gap:34px;align-items:center;min-height:82vh}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--gold);font-weight:900}h1{font-size:clamp(42px,7vw,78px);letter-spacing:-.06em;line-height:.94;margin:10px 0 18px}.lead{font-size:20px;color:#38443c}.btn{display:inline-block;border-radius:999px;padding:12px 18px;background:var(--green);color:white;text-decoration:none;margin-right:10px}.btn.alt{background:transparent;color:var(--green);border:1px solid var(--green)}.card{background:rgba(255,250,242,.82);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 24px 80px rgba(64,48,28,.12)}.packet{transform:rotate(1deg)}.stamp{display:inline-flex;padding:7px 10px;border-radius:999px;background:#e4f1df;color:var(--green);font-weight:800}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}.stat strong{display:block;font-size:28px}.muted{color:var(--muted)}.section{padding:64px 0}.section h2{font-size:clamp(30px,4vw,48px);margin:0 0 16px;letter-spacing:-.04em}.demo{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}.field{display:block;width:100%;padding:13px;border:1px solid var(--line);border-radius:14px;background:white;margin:8px 0 14px;font:inherit}.source{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:16px;background:white;margin-bottom:10px}.badge{font-size:12px;border-radius:999px;padding:5px 8px;font-weight:900}.ok{background:#e4f1df;color:var(--green)}.warn{background:#fff2ca;color:#7a4d0b}.no{background:#fbe2df;color:var(--bad)}.checks{display:grid;gap:10px}.check{display:flex;gap:10px;align-items:flex-start;padding:12px;border-radius:14px;background:#fff}.footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted)}@media(max-width:850px){.hero,.demo{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Public fake-data demo</div>
+        <h1>Lasting Ground</h1>
+        <p class="lead">A source-backed property review system that turns fragmented public/official context into readable review artifacts without pretending uncertainty is certainty.</p>
+        <p><a class="btn" href="https://github.com/sulmusic2-star/lasting-ground-showcase">Open GitHub repo</a><a class="btn alt" href="#demo">Try fake packet flow</a></p>
+      </div>
+      <aside class="card packet">
+        <span class="stamp">Sample packet / fictional data</span>
+        <h2>42 Harbor View Road</h2>
+        <p class="muted">Sample Town, MA — generated public-safe preview</p>
+        <div class="grid">
+          <div class="stat"><strong>5</strong><span class="muted">source lanes</span></div>
+          <div class="stat"><strong>3</strong><span class="muted">validated</span></div>
+          <div class="stat"><strong>2</strong><span class="muted">need caution</span></div>
+        </div>
+        <p><strong>Public wording:</strong> Source context found. Property-specific conclusions require verification.</p>
+      </aside>
+    </section>
+
+    <section class="section" id="demo">
+      <h2>Fake-data packet generator</h2>
+      <p class="muted">This runnable demo uses fictional data. It shows the artifact logic and claim boundaries without exposing production source, real addresses, private source lists, or thresholds.</p>
+      <div class="demo">
+        <div class="card">
+          <label>Sample address</label>
+          <select class="field" id="address">
+            <option>42 Harbor View Road</option>
+            <option>18 Marsh Lane</option>
+            <option>7 Upland Circle</option>
+          </select>
+          <label>Review purpose</label>
+          <select class="field" id="purpose">
+            <option>Homeowner review packet</option>
+            <option>Buyer context packet</option>
+            <option>Neighborhood source brief</option>
+          </select>
+          <button class="btn" onclick="renderPacket()">Generate sample packet</button>
+        </div>
+        <div class="card" id="packet"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What the system demonstrates</h2>
+      <div class="grid">
+        <div class="card"><h3>Evidence model</h3><p class="muted">Claims are tied to source lanes and reviewed dates.</p></div>
+        <div class="card"><h3>Claim boundaries</h3><p class="muted">Context does not become legal, permit, engineering, or inspection advice.</p></div>
+        <div class="card"><h3>Validation gates</h3><p class="muted">Missing or weak source lanes are disclosed instead of hidden.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer">Public showcase only. Fictional data. Production implementation and source methods are intentionally private.</footer>
+  <script>
+    const lanes={
+      '42 Harbor View Road':[
+        ['State GIS context','validated','Regional public layer found.'],['Town zoning reference','validated','Local source available for routing context.'],['Conservation record lane','caution','Public lane incomplete; disclose uncertainty.'],['Flood context','validated','Regional context available.'],['Permit history packet','caution','No complete local packet in this fake sample.']
+      ],
+      '18 Marsh Lane':[
+        ['State GIS context','validated','Regional public layer found.'],['Town zoning reference','caution','Local source needs review date refresh.'],['Conservation record lane','validated','Public source lane found.'],['Flood context','validated','Regional context available.'],['Permit history packet','missing','No public packet found in sample data.']
+      ],
+      '7 Upland Circle':[
+        ['State GIS context','validated','Regional public layer found.'],['Town zoning reference','validated','Local source available.'],['Conservation record lane','not-applicable','No sample signal in this lane.'],['Flood context','caution','Regional layer suggests low signal, but not a property determination.'],['Permit history packet','validated','Sample public packet record present.']
+      ]
+    };
+    function badge(status){ if(status==='validated') return 'ok'; if(status==='missing') return 'no'; return 'warn'; }
+    function label(status){ return status==='validated'?'VALIDATED':status==='missing'?'MISSING':'CAUTION'; }
+    function renderPacket(){ const addr=address.value, rows=lanes[addr]; const valid=rows.filter(r=>r[1]==='validated').length; packet.innerHTML=`<span class="stamp">${purpose.value}</span><h2>${addr}</h2><p class="muted">Fictional sample generated for public demo.</p><div class="grid"><div class="stat"><strong>${rows.length}</strong><span class="muted">source lanes</span></div><div class="stat"><strong>${valid}</strong><span class="muted">validated</span></div><div class="stat"><strong>${rows.length-valid}</strong><span class="muted">caution/missing</span></div></div><h3>Source lane review</h3>${rows.map(r=>`<div class="source"><div><strong>${r[0]}</strong><br><span class="muted">${r[2]}</span></div><span class="badge ${badge(r[1])}">${label(r[1])}</span></div>`).join('')}<h3>Validation gate</h3><div class="checks"><div class="check">✓ Use source-backed context only.</div><div class="check">✓ Disclose missing or incomplete lanes.</div><div class="check">✓ Do not make legal, permit, inspection, or engineering claims.</div></div>`; }
+    renderPacket();
+  </script>
+</body>
+</html>
