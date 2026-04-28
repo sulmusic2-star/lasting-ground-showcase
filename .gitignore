@@ -1,0 +1,25 @@
+# private/local
+.DS_Store
+.env
+.env.*
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# generated/private artifacts
+artifacts/private/
+raw-data/
+customer-data/
+*.zip
+*.tar
+*.tgz
+*.sqlite
+*.db
+
+# secrets/certs
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
