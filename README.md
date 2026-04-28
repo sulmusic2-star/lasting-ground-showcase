@@ -5,6 +5,8 @@
 This repository is intentionally a **sanitized portfolio case study**, not the private production source. It shows the product architecture, evidence model, validation posture, and sample artifact shape without exposing private implementation details, source-acquisition methods, credentials, or operational playbooks.
 
 Live demo: https://sulmusic2-star.github.io/lasting-ground-showcase/
+Sample PDF packet: https://sulmusic2-star.github.io/lasting-ground-showcase/assets/lasting-ground-sample-packet.pdf
+Public-safe sample packet builder: [`tools/build_sample_packet_assets.py`](tools/build_sample_packet_assets.py)
 
 ## What Lasting Ground does
 
