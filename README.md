@@ -1,8 +1,8 @@
 # Lasting Ground — Source-Backed Property Review System
 
 [![Lasting Ground examples CI](https://github.com/sulmusic2-star/lasting-ground-showcase/actions/workflows/ci.yml/badge.svg)](https://github.com/sulmusic2-star/lasting-ground-showcase/actions/workflows/ci.yml)
-![Tests](https://img.shields.io/badge/tests-10%20passing-brightgreen)
-![Coverage](https://img.shields.io/badge/line%20coverage-89.33%25-yellowgreen)
+![Tests](https://img.shields.io/badge/tests-18%20passing-brightgreen)
+![Coverage](https://img.shields.io/badge/line%20coverage-93.29%25-brightgreen)
 
 > A full-stack, evidence-first system for turning fragmented property context into readable review packets.
 
@@ -66,12 +66,14 @@ The packet explains context and source direction without acting like a lawyer, i
 
 ## Code examples
 
-Small examples show how fictional source-lane input becomes a validation output before packet generation:
+Small examples show how sample source-lane input becomes a validation output before packet generation:
 
 - [`examples/sample_packet_input.json`](examples/sample_packet_input.json)
 - [`examples/source_lane_validation.py`](examples/source_lane_validation.py)
 - [`examples/sample_validation_output.json`](examples/sample_validation_output.json)
 - [`examples/packet_language.py`](examples/packet_language.py)
+- [`examples/evidence_scoring.py`](examples/evidence_scoring.py)
+- [`examples/packet_composer.py`](examples/packet_composer.py)
 - [`examples/sample_packet_summary.txt`](examples/sample_packet_summary.txt)
 - [`docs/coverage-summary.md`](docs/coverage-summary.md)
 
@@ -83,7 +85,7 @@ make ci
 python examples/source_lane_validation.py
 ```
 
-The tests verify lane warnings, support-depth decisions, rejected statuses, cautious packet language, generated outputs against committed samples, and coverage for the public validation examples.
+The tests verify lane warnings, support-depth decisions, rejected statuses, evidence scoring, packet readiness, cautious packet language, generated outputs against committed samples, and coverage for the public validation examples.
 
 ## Sample artifacts
 

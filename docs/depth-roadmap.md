@@ -4,7 +4,7 @@ Ways to make this showcase deeper for reviewers:
 
 ## 1. Add a fake sample packet PDF
 
-Use fictional data and clear wording. Show the final artifact shape without using a real address.
+Use sample data and clear wording. Show the final artifact shape without using a real address.
 
 ## 2. Add source-lane examples
 

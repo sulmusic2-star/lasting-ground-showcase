@@ -26,6 +26,8 @@ make coverage
 - support depth is not promoted from source count alone
 - unexpected lane statuses are rejected
 - packet summaries avoid overconfident language
+- evidence scores reflect source authority, freshness, support, and missing lanes
+- packet sections keep uncertainty and review focus visible
 
 ## Why this matters
 

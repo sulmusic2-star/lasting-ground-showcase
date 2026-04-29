@@ -9,7 +9,7 @@ pythonpath = ["."]
 testpaths = ["tests"]
 
 [project.optional-dependencies]
-dev = ["pytest", "coverage"]
+dev = ["pytest", "coverage", "pillow"]
 
 [tool.coverage.run]
 source = ["examples"]

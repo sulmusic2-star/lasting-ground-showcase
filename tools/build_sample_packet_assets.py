@@ -103,7 +103,7 @@ def header(cmds, page_title="Lasting Ground"):
     cmds.append(rgb(248, 250, 252)); cmds.append(f"0 0 {W} {H} re f")
     cmds.append(rgb(7, 17, 31)); cmds.append(f"0 {H-86} {W} 86 re f")
     text(cmds, 40, H-40, page_title, 20, True, (255,255,255))
-    text(cmds, 40, H-62, "Sample source-backed review packet - fictional data", 10, False, (209,213,219))
+    text(cmds, 40, H-62, "Sample source-backed review packet - sample data", 10, False, (209,213,219))
     text(cmds, 40, 28, "Public showcase sample. Not legal, engineering, inspection, or permitting advice.", 8, False, (100,116,139))
 
 
@@ -125,7 +125,7 @@ def page_cover(pdf: MiniPDF):
         text(c,60,334-i*22,f"- {it}",12,False,(51,65,85))
     rect(c,40,132,532,92,(239,246,255),(96,165,250))
     text(c,60,196,"Sample support depth",14,True,(30,64,175))
-    for i,line in enumerate(wrap_lines("Publish with caution: several source lanes are validated, but permit-history evidence is incomplete in this fictional sample. Public wording should disclose the missing lane rather than imply certainty.", 76)):
+    for i,line in enumerate(wrap_lines("Publish with caution: several source lanes are validated, but permit-history evidence is incomplete in this sample. Public wording should disclose the missing lane rather than imply certainty.", 76)):
         text(c,60,172-i*13,line,9,False,(30,64,175))
     pdf.add_page(c)
 
@@ -135,7 +135,7 @@ def page_lanes(pdf: MiniPDF):
     text(c,40,670,"1. Source Lane Summary",22,True,(15,23,42))
     for i,line in enumerate(wrap_lines("A source lane is a category of evidence. The system should track what each lane supports and what it does not support.",74)):
         text(c,40,642-i*14,line,10,False,(51,65,85))
-    rows=[("State GIS Context","VALIDATED","Broad regional screening context."),("Town Zoning Reference","VALIDATED","Local routing/reference context."),("Conservation Record Lane","CAUTION","Public lane incomplete; disclose uncertainty."),("Flood Context","VALIDATED","Regional flood-context layer available."),("Permit History Packet","MISSING","No complete local packet in this fictional sample.")]
+    rows=[("State GIS Context","VALIDATED","Broad regional screening context."),("Town Zoning Reference","VALIDATED","Local routing/reference context."),("Conservation Record Lane","CAUTION","Public lane incomplete; disclose uncertainty."),("Flood Context","VALIDATED","Regional flood-context layer available."),("Permit History Packet","MISSING","No complete local packet in this sample.")]
     y=570
     for name,status,desc in rows:
         fill=(236,253,245) if status=="VALIDATED" else (255,251,235) if status=="CAUTION" else (254,242,242)
@@ -150,7 +150,7 @@ def page_lanes(pdf: MiniPDF):
 def page_findings(pdf: MiniPDF):
     c=[]; header(c)
     text(c,40,670,"2. Plain-English Findings",22,True,(15,23,42))
-    findings=[("What the packet found","Regional and local source context exists for this fictional address."),("What needs caution","One local record lane is incomplete, so a property-specific conclusion is not supported."),("What the reader should understand","This packet provides context and source direction, not legal, permit, engineering, or inspection advice."),("What happens next","A stronger packet would require a verified local permit/history lane or an explicit no-record result from a public source.")]
+    findings=[("What the packet found","Regional and local source context exists for this sample address."),("What needs caution","One local record lane is incomplete, so a property-specific conclusion is not supported."),("What the reader should understand","This packet provides context and source direction, not legal, permit, engineering, or inspection advice."),("What happens next","A stronger packet would require a verified local permit/history lane or an explicit no-record result from a public source.")]
     y=610
     for head,body in findings:
         text(c,40,y,head,14,True,(15,23,42)); y-=20
@@ -206,12 +206,12 @@ def build_cover():
     d=ImageDraw.Draw(im)
     d.rectangle((0,0,1200,190),fill="#07111f")
     d.text((72,62),"Lasting Ground",font=_font(54,True),fill="white")
-    d.text((72,124),"Sample source-backed review packet - fictional data",font=_font(24),fill="#cbd5e1")
+    d.text((72,124),"Sample source-backed review packet - sample data",font=_font(24),fill="#cbd5e1")
     d.text((72,280),"42 Harbor View Road",font=_font(66,True),fill="#0f172a")
     d.text((72,365),"FICTIONAL SAMPLE",font=_font(30,True),fill="#92400e")
     d.rounded_rectangle((72,480,1128,720),radius=32,fill="#eff6ff",outline="#93c5fd",width=3)
     d.text((112,525),"Sample support depth",font=_font(32,True),fill="#1e40af")
-    lines=wrap_lines("Publish with caution: several source lanes are validated, but permit-history evidence is incomplete in this fictional sample.",52)
+    lines=wrap_lines("Publish with caution: several source lanes are validated, but permit-history evidence is incomplete in this sample.",52)
     y=582
     for line in lines:
         d.text((112,y),line,font=_font(26),fill="#1e3a8a"); y+=34
