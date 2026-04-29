@@ -69,6 +69,8 @@ Small examples show how fictional source-lane input becomes a validation output 
 - [`examples/sample_packet_input.json`](examples/sample_packet_input.json)
 - [`examples/source_lane_validation.py`](examples/source_lane_validation.py)
 - [`examples/sample_validation_output.json`](examples/sample_validation_output.json)
+- [`examples/packet_language.py`](examples/packet_language.py)
+- [`examples/sample_packet_summary.txt`](examples/sample_packet_summary.txt)
 
 ## Run the code examples
 
@@ -78,12 +80,13 @@ pytest -q
 python examples/source_lane_validation.py
 ```
 
-The tests verify lane warnings, support-depth decisions, rejected statuses, and that the generated validation output matches the committed JSON.
+The tests verify lane warnings, support-depth decisions, rejected statuses, cautious packet language, and that generated outputs match committed samples.
 
 ## Sample artifacts
 
 - [`docs/system-architecture.md`](docs/system-architecture.md)
 - [`docs/engineering-decisions.md`](docs/engineering-decisions.md)
+- [`docs/testing.md`](docs/testing.md)
 - [`docs/evidence-model.md`](docs/evidence-model.md)
 - [`docs/support-depth-model.md`](docs/support-depth-model.md)
 - [`sample-artifacts/sample-review-packet-outline.md`](sample-artifacts/sample-review-packet-outline.md)

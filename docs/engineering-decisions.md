@@ -19,3 +19,7 @@ The packet can describe source context and uncertainty. It should not become leg
 ## Make validation reproducible
 
 The example input, validation script, generated output, and tests are committed together so the behavior can be reviewed and reproduced from the repo.
+
+## Guard language after validation
+
+Even after source validation passes, packet text still needs guardrails. The language helper keeps summaries tied to validated lane counts, visible warnings, and cautious source-context wording.

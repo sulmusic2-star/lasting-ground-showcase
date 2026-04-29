@@ -1,0 +1,4 @@
+42 Harbor View Road in Sample Town, MA has 2 validated source lanes in this sample.
+Support depth: standard support with caution.
+2 lane warning(s) should stay visible in the packet.
+The packet should describe source context and avoid property-specific legal, permit, inspection, or engineering conclusions.
