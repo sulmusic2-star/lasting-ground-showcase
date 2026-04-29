@@ -5,9 +5,17 @@ Lasting Ground's public examples test the source-lane validation path before pac
 ## Run locally
 
 ```bash
-python -m pip install pytest
-pytest -q
+python -m pip install -e ".[dev]"
+make ci
 python examples/source_lane_validation.py
+```
+
+## Coverage
+
+A committed coverage snapshot lives at [`docs/coverage-summary.md`](coverage-summary.md). Re-run it with:
+
+```bash
+make coverage
 ```
 
 ## What is covered

@@ -1,6 +1,8 @@
 # Lasting Ground — Source-Backed Property Review System
 
 [![Lasting Ground examples CI](https://github.com/sulmusic2-star/lasting-ground-showcase/actions/workflows/ci.yml/badge.svg)](https://github.com/sulmusic2-star/lasting-ground-showcase/actions/workflows/ci.yml)
+![Tests](https://img.shields.io/badge/tests-10%20passing-brightgreen)
+![Coverage](https://img.shields.io/badge/line%20coverage-89.33%25-yellowgreen)
 
 > A full-stack, evidence-first system for turning fragmented property context into readable review packets.
 
@@ -71,16 +73,17 @@ Small examples show how fictional source-lane input becomes a validation output 
 - [`examples/sample_validation_output.json`](examples/sample_validation_output.json)
 - [`examples/packet_language.py`](examples/packet_language.py)
 - [`examples/sample_packet_summary.txt`](examples/sample_packet_summary.txt)
+- [`docs/coverage-summary.md`](docs/coverage-summary.md)
 
 ## Run the code examples
 
 ```bash
-python -m pip install pytest
-pytest -q
+python -m pip install -e ".[dev]"
+make ci
 python examples/source_lane_validation.py
 ```
 
-The tests verify lane warnings, support-depth decisions, rejected statuses, cautious packet language, and that generated outputs match committed samples.
+The tests verify lane warnings, support-depth decisions, rejected statuses, cautious packet language, generated outputs against committed samples, and coverage for the public validation examples.
 
 ## Sample artifacts
 

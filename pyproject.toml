@@ -7,3 +7,12 @@ requires-python = ">=3.11"
 [tool.pytest.ini_options]
 pythonpath = ["."]
 testpaths = ["tests"]
+
+[project.optional-dependencies]
+dev = ["pytest", "coverage"]
+
+[tool.coverage.run]
+source = ["examples"]
+
+[tool.coverage.report]
+show_missing = true

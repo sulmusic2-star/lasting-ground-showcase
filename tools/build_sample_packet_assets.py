@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build shareable Lasting Ground sample packet assets.
 
-This script creates a fake-data printable PDF-style sample packet and a cover preview image with neutral claim language and no real address records.
+This script creates a printable PDF-style sample packet and a cover preview image with neutral claim language and sample address records.
 """
 from __future__ import annotations
 from pathlib import Path
