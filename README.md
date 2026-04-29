@@ -1,5 +1,7 @@
 # Lasting Ground — Source-Backed Property Review System
 
+[![Lasting Ground examples CI](https://github.com/sulmusic2-star/lasting-ground-showcase/actions/workflows/ci.yml/badge.svg)](https://github.com/sulmusic2-star/lasting-ground-showcase/actions/workflows/ci.yml)
+
 > A full-stack, evidence-first system for turning fragmented property context into readable review packets.
 
 Lasting Ground is built around a simple rule: if a source does not support a claim, the product should not pretend certainty. The system collects public/official context, organizes it into evidence lanes, applies validation gates, and generates a packet a normal person can read.
@@ -68,9 +70,20 @@ Small examples show how fictional source-lane input becomes a validation output 
 - [`examples/source_lane_validation.py`](examples/source_lane_validation.py)
 - [`examples/sample_validation_output.json`](examples/sample_validation_output.json)
 
+## Run the code examples
+
+```bash
+python -m pip install pytest
+pytest -q
+python examples/source_lane_validation.py
+```
+
+The tests verify lane warnings, support-depth decisions, rejected statuses, and that the generated validation output matches the committed JSON.
+
 ## Sample artifacts
 
 - [`docs/system-architecture.md`](docs/system-architecture.md)
+- [`docs/engineering-decisions.md`](docs/engineering-decisions.md)
 - [`docs/evidence-model.md`](docs/evidence-model.md)
 - [`docs/support-depth-model.md`](docs/support-depth-model.md)
 - [`sample-artifacts/sample-review-packet-outline.md`](sample-artifacts/sample-review-packet-outline.md)
