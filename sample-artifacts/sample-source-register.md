@@ -9,4 +9,4 @@ Shareable illustrative source register.
 | sample_conservation_records | local public records | official public record | review-history/source appendix context | determination of compliance |
 | sample_flood_context | regional/federal context | public data layer | flood-context screening | engineering design advice |
 
-The real system uses stricter internal contracts. This sample only shows the public concept.
+A stronger production packet would apply stricter source contracts and review gates.

@@ -1,6 +1,6 @@
 # Sample Validation Gate
 
-This is a shareable example of how a source-backed review system can prevent overclaiming.
+This example shows how a source-backed review system can keep weak evidence from becoming overconfident language.
 
 ## Gate checks
 
