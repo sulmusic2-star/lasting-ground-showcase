@@ -1,0 +1,52 @@
+{
+  "address_label": "42 Harbor View Road",
+  "caution_or_missing_count": 2,
+  "jurisdiction": "Sample Town, MA",
+  "lane_checks": [
+    {
+      "label": "State GIS Context",
+      "lane_id": "state_gis_context",
+      "reviewed_on": "2026-04-28",
+      "source_type": "official_public_layer",
+      "status": "validated",
+      "supports_count": 2,
+      "warning": null
+    },
+    {
+      "label": "Town Zoning Reference",
+      "lane_id": "town_zoning_reference",
+      "reviewed_on": "2026-04-28",
+      "source_type": "local_public_reference",
+      "status": "validated",
+      "supports_count": 2,
+      "warning": null
+    },
+    {
+      "label": "Conservation Record Lane",
+      "lane_id": "conservation_records",
+      "reviewed_on": "2026-04-28",
+      "source_type": "local_public_records",
+      "status": "caution",
+      "supports_count": 1,
+      "warning": "lane is incomplete; packet language should stay cautious"
+    },
+    {
+      "label": "Permit History Packet",
+      "lane_id": "permit_history",
+      "reviewed_on": null,
+      "source_type": "local_public_records",
+      "status": "missing",
+      "supports_count": 0,
+      "warning": "lane is missing and must be disclosed in the packet"
+    }
+  ],
+  "lane_count": 4,
+  "packet_id": "demo-packet-001",
+  "packet_language_rule": "Describe source context, disclose incomplete lanes, and avoid property-specific legal, permit, inspection, or engineering conclusions.",
+  "support_depth": "standard_support_with_caution",
+  "validated_count": 2,
+  "warnings": [
+    "lane is incomplete; packet language should stay cautious",
+    "lane is missing and must be disclosed in the packet"
+  ]
+}

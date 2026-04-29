@@ -59,6 +59,15 @@ A coastal town, island town, inland town, and dense city can require different s
 
 The packet explains context and source direction without acting like a lawyer, inspector, engineer, or permitting authority.
 
+
+## Code examples
+
+Small examples show how fictional source-lane input becomes a validation output before packet generation:
+
+- [`examples/sample_packet_input.json`](examples/sample_packet_input.json)
+- [`examples/source_lane_validation.py`](examples/source_lane_validation.py)
+- [`examples/sample_validation_output.json`](examples/sample_validation_output.json)
+
 ## Sample artifacts
 
 - [`docs/system-architecture.md`](docs/system-architecture.md)

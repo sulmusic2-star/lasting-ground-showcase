@@ -1,0 +1,44 @@
+{
+  "packet_id": "demo-packet-001",
+  "address_label": "42 Harbor View Road",
+  "jurisdiction": "Sample Town, MA",
+  "purpose": "homeowner_context",
+  "source_lanes": [
+    {
+      "lane_id": "state_gis_context",
+      "label": "State GIS Context",
+      "source_type": "official_public_layer",
+      "status": "validated",
+      "reviewed_on": "2026-04-28",
+      "supports": ["regional screening context", "source appendix citation"],
+      "does_not_support": ["parcel-specific legal conclusion", "engineering conclusion"]
+    },
+    {
+      "lane_id": "town_zoning_reference",
+      "label": "Town Zoning Reference",
+      "source_type": "local_public_reference",
+      "status": "validated",
+      "reviewed_on": "2026-04-28",
+      "supports": ["local routing context", "source appendix citation"],
+      "does_not_support": ["permit approval prediction"]
+    },
+    {
+      "lane_id": "conservation_records",
+      "label": "Conservation Record Lane",
+      "source_type": "local_public_records",
+      "status": "caution",
+      "reviewed_on": "2026-04-28",
+      "supports": ["possible review-history direction"],
+      "does_not_support": ["complete property history", "approval requirement"]
+    },
+    {
+      "lane_id": "permit_history",
+      "label": "Permit History Packet",
+      "source_type": "local_public_records",
+      "status": "missing",
+      "reviewed_on": null,
+      "supports": [],
+      "does_not_support": ["permit-history conclusion"]
+    }
+  ]
+}
