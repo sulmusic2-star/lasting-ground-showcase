@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Build public-safe Lasting Ground sample packet assets.
+"""Build shareable Lasting Ground sample packet assets.
 
 This is intentionally fake-data/demo-only. It creates a printable PDF-style
-sample packet and a cover preview image without using private source lists,
-real addresses, credentials, or production implementation code.
+sample packet and a cover preview image with fictional data, neutral claim language, and no real address records.
 """
 from __future__ import annotations
 from pathlib import Path
@@ -112,7 +111,7 @@ def header(cmds, page_title="Lasting Ground"):
 def page_cover(pdf: MiniPDF):
     c=[]; header(c)
     text(c, 40, 646, "42 Harbor View Road", 30, True, (15,23,42))
-    for i,line in enumerate(wrap_lines("This fake packet demonstrates the artifact shape, source appendix, and validation posture of a source-backed property review system without using any real address or private implementation.", 70)):
+    for i,line in enumerate(wrap_lines("This fake packet demonstrates the artifact shape, source appendix, and validation posture of a source-backed property review system without using any real address.", 70)):
         text(c, 40, 610-i*15, line, 11, False, (51,65,85))
     rect(c, 40, 430, 250, 90, (255,251,235), (251,191,36))
     text(c, 60, 488, "FICTIONAL SAMPLE", 16, True, (146,64,14))
@@ -228,7 +227,7 @@ def build_cover():
 
 
 def build_html():
-    HTML_PATH.write_text("""<!doctype html><meta charset='utf-8'><title>Lasting Ground Sample Packet</title><body style='font-family:system-ui;margin:40px;max-width:900px'><h1>Lasting Ground sample packet</h1><p>Public-safe fake-data artifact source. Open the PDF from the live demo.</p><p><a href='lasting-ground-sample-packet.pdf'>PDF</a></p><p><a href='lasting-ground-sample-packet-cover.png'>Cover preview</a></p></body>\n""")
+    HTML_PATH.write_text("""<!doctype html><meta charset='utf-8'><title>Lasting Ground Sample Packet</title><body style='font-family:system-ui;margin:40px;max-width:900px'><h1>Lasting Ground sample packet</h1><p>Fake-data sample artifact source. Open the PDF from the live demo.</p><p><a href='lasting-ground-sample-packet.pdf'>PDF</a></p><p><a href='lasting-ground-sample-packet-cover.png'>Cover preview</a></p></body>\n""")
 
 
 def main():

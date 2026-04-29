@@ -1,12 +1,12 @@
 # Lasting Ground — Source-Backed Property Review System
 
-> A public showcase for a full-stack, evidence-first property resilience review system.
+> A full-stack, evidence-first property resilience review system.
 
-This repository is intentionally a **sanitized portfolio case study**, not the private production source. It shows the product architecture, evidence model, validation posture, and sample artifact shape without exposing private implementation details, source-acquisition methods, credentials, or operational playbooks.
+This repository presents the product architecture, evidence model, validation posture, and sample artifact shape behind Lasting Ground. It is designed for quick technical review: what the system does, how evidence is modeled, how claims are controlled, and what the generated packet looks like.
 
 Live demo: https://sulmusic2-star.github.io/lasting-ground-showcase/
 Sample PDF packet: https://sulmusic2-star.github.io/lasting-ground-showcase/assets/lasting-ground-sample-packet.pdf
-Public-safe sample packet builder: [`tools/build_sample_packet_assets.py`](tools/build_sample_packet_assets.py)
+Sample packet builder: [`tools/build_sample_packet_assets.py`](tools/build_sample_packet_assets.py)
 
 ## What Lasting Ground does
 
@@ -53,7 +53,7 @@ The system distinguishes between source-backed local detail, regional/default co
 
 ### 2. Deterministic where it matters
 
-The private implementation uses explicit rules and validation gates for claim boundaries. LLM-style writing may help explain results, but it should not invent evidence.
+The implementation model uses explicit rules and validation gates for claim boundaries. LLM-style writing may help explain results, but it should not invent evidence.
 
 ### 3. Local context matters
 
@@ -63,7 +63,7 @@ A coastal town, island town, inland town, and dense city can require different s
 
 The product avoids acting like a lawyer, inspector, engineer, or permitting authority. It packages context and source links; it does not replace professional review.
 
-## Public-safe sample artifacts
+## Sample artifacts
 
 This showcase includes simplified examples:
 
@@ -74,16 +74,17 @@ This showcase includes simplified examples:
 - [`sample-artifacts/sample-source-register.md`](sample-artifacts/sample-source-register.md)
 - [`docs/security-and-redaction.md`](docs/security-and-redaction.md)
 
-## What is intentionally not included
+## Repository scope
 
-- production source code
-- non-public collection tooling
-- non-public local-pack implementation details
-- private validation datasets
-- customer/property records
-- credentials, API keys, or deployment config
-- exact promotion thresholds or operational wave playbooks
-- private business strategy docs
+This repo focuses on the reviewable parts of the system:
+
+- product architecture
+- evidence model
+- support-depth model
+- validation gate examples
+- sample packet artifacts
+- source-register structure
+- demo flow and documentation
 
 ## Why this is a serious build
 
@@ -101,4 +102,4 @@ That is the work that makes a real product different from a mockup.
 
 ## Status
 
-Public sanitized showcase. Production system private.
+Portfolio showcase for product review and technical evaluation.

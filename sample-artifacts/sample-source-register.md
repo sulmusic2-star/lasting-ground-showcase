@@ -1,6 +1,6 @@
 # Sample Source Register
 
-Public-safe illustrative source register.
+Shareable illustrative source register.
 
 | source_id | lane | source type | supports | does not support |
 |---|---|---|---|---|

@@ -1,6 +1,6 @@
 # Sample Review Packet Outline
 
-This is a simplified public-safe outline. It is not a real property report.
+This is a simplified shareable outline. It is not a real property report.
 
 ## 1. Front Page
 

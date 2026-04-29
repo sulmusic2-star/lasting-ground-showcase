@@ -1,37 +1,26 @@
-# Security And Redaction
+# Repository Review Notes
 
-This public repository is intentionally sanitized.
+This repository is designed around project review: architecture, evidence model, validation posture, demo flow, and sample artifacts.
 
-## Excluded
-
-- production source code
-- credentials and environment files
-- private source-adapter implementation
-- exact validation thresholds
-- private support-depth promotion rules
-- customer/property records
-- non-public local-pack implementation details
-- operational launch/wave playbooks
-- business strategy docs
-
-## Why
-
-The goal is to demonstrate system design and product judgment without publishing a reusable operating manual or leaking sensitive data.
-
-## Public-safe claims
-
-Safe:
+## Review focus
 
 - evidence-first architecture
 - source registry concept
-- support-depth concept
-- validation gate concept
+- support-depth model
+- validation gate examples
 - report/packet artifact model
+- fictional demo flow
+- sample PDF packet
 
-Not public:
+## Technical claims
 
-- exact thresholds
-- exact acquisition methods
-- private scripts
-- internal data stores
-- customer or address-level production records
+Supported by this showcase:
+
+- Lasting Ground models property context as source-backed evidence lanes.
+- Stronger claims require stronger source support.
+- Missing evidence is shown as a product state, not hidden.
+- Generated packets should preserve uncertainty and claim boundaries.
+
+## Claim boundaries
+
+The sample artifacts use fictional data and should be read as product demonstrations, not property advice, legal advice, engineering advice, inspection advice, permit guidance, or production property outputs.

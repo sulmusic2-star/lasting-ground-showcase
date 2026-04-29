@@ -1,10 +1,10 @@
 # What To Add Next
 
-Safe ways to make this showcase deeper without leaking private implementation:
+Ways to make this showcase deeper for reviewers:
 
 ## 1. Add a fake sample packet PDF
 
-Use fictional data and public-safe wording. Show the final artifact shape without using a real address or private report.
+Use fictional data and clear wording. Show the final artifact shape without using a real address.
 
 ## 2. Add source-lane examples
 
@@ -22,11 +22,11 @@ Expand `sample-artifacts/sample-validation-gate.md` with more pass/fail examples
 
 ## 4. Add screenshots or diagrams
 
-Good public-safe visuals:
+Good shareable visuals:
 
 - intake flow
 - evidence registry concept
 - review packet outline
 - validation gate diagram
 
-Avoid real property records, addresses, private source lists, or internal thresholds.
+Avoid real property records, real addresses, and unnecessary implementation detail.

@@ -57,6 +57,6 @@ Reusable regional and town-specific context packs. Packs separate local source c
 
 Release gates and support-depth checks prevent the product from overstating what the source set can actually prove.
 
-## Public-safe abstraction
+## Shareable abstraction
 
-The private production implementation includes additional internal tooling, but the key architectural lesson is the same: separate evidence collection, deterministic routing, claim boundaries, and user-facing explanation.
+The key architectural lesson is to separate evidence collection, deterministic routing, claim boundaries, and user-facing explanation.

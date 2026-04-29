@@ -2,7 +2,7 @@
 
 Support depth is a way to describe how strong the local/source-backed context is for a given area.
 
-This showcase intentionally omits exact private thresholds. The public concept is:
+This showcase uses a simplified support-depth model. The concept is:
 
 ## Lower support
 

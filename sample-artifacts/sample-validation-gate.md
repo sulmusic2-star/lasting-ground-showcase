@@ -1,10 +1,10 @@
 # Sample Validation Gate
 
-This is a public-safe example of how a source-backed review system can prevent overclaiming.
+This is a shareable example of how a source-backed review system can prevent overclaiming.
 
 ## Gate checks
 
-| Check | Public-safe rule | Pass example | Fail example |
+| Check | Shareable rule | Pass example | Fail example |
 |---|---|---|---|
 | Source present | Every key claim needs a named source | Source appendix includes reviewed public source | Claim appears without source |
 | Scope boundary | Source context cannot become legal/engineering advice | "May be relevant to review routing" | "Will be approved" |
