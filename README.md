@@ -20,8 +20,9 @@ If you are evaluating this quickly, start here:
 2. [Sample PDF packet](https://sulmusic2-star.github.io/lasting-ground-showcase/assets/lasting-ground-sample-packet.pdf)
 3. [Case study](https://sulmusic2-star.github.io/case-studies/lasting-ground/)
 4. [Evaluator guide](docs/evaluator-guide.md)
-5. Advanced logic: [`evidence_scoring.py`](examples/evidence_scoring.py), [`packet_composer.py`](examples/packet_composer.py), [`source_lane_validation.py`](examples/source_lane_validation.py)
-6. [CI workflow](https://github.com/sulmusic2-star/lasting-ground-showcase/actions/workflows/ci.yml) and [coverage summary](docs/coverage-summary.md)
+5. [Architecture decision records](docs/adr/README.md)
+6. Advanced logic: [`evidence_scoring.py`](examples/evidence_scoring.py), [`packet_composer.py`](examples/packet_composer.py), [`source_lane_validation.py`](examples/source_lane_validation.py)
+7. [CI workflow](https://github.com/sulmusic2-star/lasting-ground-showcase/actions/workflows/ci.yml) and [coverage summary](docs/coverage-summary.md)
 
 ## What it does
 
@@ -102,6 +103,7 @@ The tests verify lane warnings, support-depth decisions, rejected statuses, evid
 
 - [`docs/system-architecture.md`](docs/system-architecture.md)
 - [`docs/engineering-decisions.md`](docs/engineering-decisions.md)
+- [`docs/adr/README.md`](docs/adr/README.md)
 - [`docs/testing.md`](docs/testing.md)
 - [`docs/evaluator-guide.md`](docs/evaluator-guide.md)
 - [`docs/evidence-model.md`](docs/evidence-model.md)
