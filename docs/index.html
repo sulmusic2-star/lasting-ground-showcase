@@ -27,6 +27,56 @@
     .hero{min-height:auto;padding:86px 0 94px}.packet-card,.floating-note{color:var(--ink)}.packet-card .muted,.floating-note span{color:var(--muted)}.packet-card strong,.packet-card b,.floating-note b{color:var(--ink)}.packet-card .source-line{color:var(--ink)}.packet-card p{color:#24352d}.packet-stage .stamp{color:#0d6047}.metric{box-shadow:0 18px 50px rgba(7,24,19,.06)}
     @media(max-width:900px){.hero{padding:46px 0 62px}}
 
+
+
+    /* v10 responsive QA: prevent mobile clipping and keep packet visuals readable */
+    html,body{max-width:100%;overflow-x:hidden}*,*::before,*::after{min-width:0}img,svg{max-width:100%;height:auto}
+    @media(max-width:700px){
+      .wrap{width:100%;max-width:100%;padding-left:14px;padding-right:14px}.topnav{margin-left:-14px;margin-right:-14px;padding:10px 14px 14px;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:8px}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}
+      .hero{padding:44px 0 54px;gap:30px}h1{font-size:clamp(42px,13vw,52px)!important;line-height:.98;letter-spacing:-.058em;word-spacing:.035em;text-wrap:balance;max-width:100%}h2{font-size:clamp(31px,10vw,42px)!important;line-height:1.02;letter-spacing:-.055em}h3{font-size:clamp(22px,7vw,28px)}.lead{font-size:18px;line-height:1.5;max-width:100%}.actions{gap:10px}.btn{padding:11px 14px;max-width:100%}
+      .metric-row,.grid,.artifact-strip,.demo{grid-template-columns:1fr!important}.metric,.card{width:100%}
+      .packet-stage{width:100%;min-height:auto;padding:22px;border-radius:28px}.packet-stage:before{inset:16px}.packet-stage:after{width:190px;height:250px;left:26px;bottom:30px}.floating-note{position:relative!important;inset:auto!important;margin:0 0 10px;width:100%;padding:13px 16px}.packet-card{width:100%;margin:24px 0 0;padding:22px;border-radius:24px}.source-line{grid-template-columns:1fr;gap:8px}.badge{justify-self:start}.visual-card-wide{border-radius:28px}.visual-card-wide img{border-radius:28px;aspect-ratio:16/9;object-fit:cover}.preview-img{max-height:520px;object-fit:contain;background:#fff}.section{padding:44px 0}.source{grid-template-columns:1fr}.artifact-strip div{border-right:0;border-bottom:1px solid var(--line)}
+    }
+
+
+
+    /* v10.1 mobile hardening: no clipped text or horizontal dependency */
+    @media(max-width:700px){
+      .wrap{width:calc(100% - 28px);max-width:calc(100% - 28px);padding-left:0;padding-right:0;overflow:hidden}.topnav{margin-left:0;margin-right:0;padding:10px 0 14px;flex-wrap:wrap;overflow:visible;gap:8px}.topnav a{font-size:13px;padding:8px 11px;max-width:100%}
+      h1{font-size:37px!important;line-height:1;letter-spacing:-.05em;word-spacing:.02em;text-wrap:pretty}.lead{font-size:17px;line-height:1.5}.actions{display:grid;grid-template-columns:1fr;max-width:280px}.actions .btn{width:100%;justify-content:center}.metric{padding:15px 16px}.packet-stage{padding:18px;overflow:hidden}.packet-card{padding:20px}.packet-card h3{font-size:24px}.visual-system{overflow:hidden}.visual-card-wide{overflow:hidden}.section-head{overflow:hidden}.source-line b{font-size:15px}
+    }
+
+
+
+    /* v10.3 mobile typography correction */
+    @media(max-width:700px){h1{font-size:31px!important;line-height:1.04!important;letter-spacing:-.035em!important;text-wrap:wrap!important;overflow:visible!important}h2{font-size:30px!important;line-height:1.08!important;letter-spacing:-.035em!important;text-wrap:wrap!important;overflow:visible!important}.hero{overflow:visible!important}.lead,.muted{overflow-wrap:break-word}.packet-stage{margin-top:10px}.visual-card-wide img{aspect-ratio:4/3;object-fit:contain;background:#071813}}
+
+
+
+    /* v10.5 mobile safe measure */
+    @media(max-width:700px){.hero>div,.hero .lead,.metric-row,.packet-stage,.visual-system,.visual-card-wide,.artifact-strip,.demo,.grid,.section-head{max-width:340px;margin-left:auto;margin-right:auto;width:100%}.hero>div{margin-left:0}.hero .lead{max-width:320px;margin-left:0}.metric-row{margin-left:0}.packet-stage{margin-top:18px}.card p,.metric span{font-size:14px;line-height:1.45}}
+
+
+
+    /* v10.6 mobile panel alignment */
+    @media(max-width:700px){.packet-stage,.visual-card-wide,.card,.artifact-strip,.demo,.grid,.metric{width:calc(100vw - 28px)!important;max-width:calc(100vw - 28px)!important;margin-left:0!important;margin-right:0!important;justify-self:start!important}.hero>aside{margin-left:0!important;margin-right:0!important}}
+
+
+
+    /* v10.7 mobile nav and explicit headline rhythm */
+    h1 span,h2 span{display:block}
+    @media(max-width:700px){.topnav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.topnav a{text-align:center;justify-content:center;overflow:hidden;text-overflow:ellipsis}.topnav a:last-child:nth-child(odd){grid-column:1/-1}.packet-card{width:100%;max-width:100%;overflow:hidden}.packet-card p{font-size:15px;line-height:1.45}.visual-card-wide img{max-height:260px}}
+
+
+
+    /* v10.8 mobile nav label readability */
+    @media(max-width:700px){.topnav a{font-size:12px;line-height:1.15;padding:8px 7px;white-space:normal;overflow:visible;text-overflow:clip;min-height:38px;display:flex;align-items:center}}
+
+
+
+    /* v10.9 final mobile safe layout */
+    @media(max-width:700px){.topnav{grid-template-columns:1fr}.topnav a:last-child:nth-child(odd){grid-column:auto}.topnav a{font-size:13px;min-height:36px}.packet-stage,.visual-card-wide,.card,.artifact-strip,.demo,.grid,.metric{width:100%!important;max-width:330px!important;margin-left:0!important;margin-right:0!important}.metric-row{max-width:330px}.visual-card-wide img{width:100%}}
+
 </style>
 </head>
 <body>
@@ -35,7 +85,7 @@
     <section class="hero">
       <div>
         <p class="eyebrow">Evidence system</p>
-        <h1>Public context, turned into a readable packet.</h1>
+        <h1><span>Public context,</span><span>turned into</span><span>a readable packet.</span></h1>
         <p class="lead">Lasting Ground organizes fragmented source context into evidence lanes, support-depth decisions, validation gates, packet sections, and a printable sample artifact.</p>
         <div class="actions"><a class="btn primary" href="#demo">Try sample packet flow</a><a class="btn" href="assets/lasting-ground-sample-packet.pdf">Open sample PDF</a><a class="btn" href="https://github.com/sulmusic2-star/lasting-ground-showcase">GitHub repo</a></div>
         <div class="metric-row"><div class="metric"><b>18</b><span>passing Python tests</span></div><div class="metric"><b>93.29%</b><span>coverage summary</span></div><div class="metric"><b>5</b><span>sample source lanes</span></div></div>
@@ -50,7 +100,7 @@
 
 
     <section class="section visual-system">
-      <div class="section-head"><p class="eyebrow">System graphic</p><h2>The packet is the final layer, not the whole system.</h2><p class="muted">The visual path starts with public source lanes, then evidence scoring, support-depth decisions, visible cautions, and finally a readable artifact.</p></div>
+      <div class="section-head"><p class="eyebrow">System graphic</p><h2><span>The packet is the final layer,</span><span>not the whole system.</span></h2><p class="muted">The visual path starts with public source lanes, then evidence scoring, support-depth decisions, visible cautions, and finally a readable artifact.</p></div>
       <div class="card visual-card-wide"><img src="assets/lasting-ground-evidence-map.svg" alt="Lasting Ground evidence map" /></div>
     </section>
 
