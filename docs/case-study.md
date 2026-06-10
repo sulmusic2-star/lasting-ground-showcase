@@ -73,6 +73,8 @@ I built and run this **solo, by orchestrating AI coding agents** — primarily C
 
 The judgment — architecture, what to trust, what to keep proprietary, what's safe to tell a customer — is mine. The agents are a force multiplier that lets one person ship and operate something that normally takes a team. That operating model, not any single feature, is the thing I'd bring to a team adopting AI-native development.
 
+There's a second, quieter judgment in the product: I use AI agents to *build* it, but the engine itself is deterministic. The compliance-critical answers (flood zone, insurance, zoning) never pass through a language model. In a domain next to insurance and lending, an answer has to be reproducible and traceable to an official source every time, so the model stays out of the hot path and the sources speak for themselves. Knowing where AI belongs, and where it doesn't, is what the whole product rests on.
+
 ---
 
 ## Results
