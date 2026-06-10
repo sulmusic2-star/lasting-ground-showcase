@@ -1,7 +1,3 @@
-<!-- Repo README — github.com/sulmusic2-star/lasting-ground-showcase
-     Drop-in replacement for the existing README.md
-     Upgraded 2026.05 — visual hierarchy, real screenshots, audience-focused -->
-
 <div align="center">
 
 # Lasting Ground
@@ -22,7 +18,7 @@ A full-stack, evidence-first system that turns fragmented public-source property
 
 ---
 
-![Lasting Ground homepage — One address. One source-dated property check.](docs/screenshots/lastingground-home.png)
+![Lasting Ground — a source-dated property-check packet (sample cover)](docs/assets/lasting-ground-sample-packet-cover.png)
 
 > **One address. One source-dated property check.** &mdash; The product translates federal flood maps, state coastal models, MassGIS layers, and town public records into a four-page packet a homeowner, buyer, attorney, or town agent can read in a sitting.
 
@@ -45,7 +41,7 @@ Most demos stop at the UI. Lasting Ground required the operating layer underneat
 
 ## How it works
 
-![How it works — Address in. Source-dated report out.](docs/screenshots/lastingground-how-it-works.png)
+![How a single address resolves into source-cited answers](docs/assets/lasting-ground-evidence-map.svg)
 
 1. **Type a Massachusetts property address.** &nbsp;Address autocomplete checks coverage before checkout.
 2. **See the free snapshot.** &nbsp;The snapshot shows source-depth, available core checks, and a few high-value signals.
