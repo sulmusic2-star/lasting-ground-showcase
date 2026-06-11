@@ -1,8 +1,10 @@
 # Case Study — Lasting Ground
 
-*Source-backed property review for Massachusetts. A live, paid product I designed and operate solo.*
+*A live answer engine for public records. One Massachusetts address in, source-cited flood, zoning, and insurance answers out in seconds. A live, paid product I designed and operate solo.*
 
-[Live site → lastingground.com](https://lastingground.com) · [Sample packet (PDF)](assets/lasting-ground-sample-packet.pdf) · [System architecture](system-architecture.md) · [ADRs](adr/README.md)
+![The Lasting Ground live answer engine for a Massachusetts address: 11 source-cited answers found, grouped by source category, each stamped with its official source and the date it was checked.](assets/live-answers.png)
+
+[Live site → lastingground.com](https://lastingground.com) · [System architecture](system-architecture.md) · [ADRs](adr/README.md)
 
 > **A note on scope.** This case study describes *what* the system does, *how it is architected*, and *how I built and operate it*. The source-acquisition pipeline — how specific records are discovered, accessed, and normalized — is the product's competitive moat and is deliberately kept proprietary. Everything below is true and verifiable from the live site and this repo; the parts that aren't here are omitted on purpose, not missing.
 
@@ -65,13 +67,13 @@ The UI is the easy 20%. These are the choices that made it a product instead of 
 
 ## How I built and operate it (the part that's unusual)
 
-I built and run this **solo, by orchestrating AI coding agents** — primarily Claude Code and OpenAI Codex — as a small engineering team with a defined operating model:
+I built and run this **solo, by orchestrating AI coding agents** (primarily Claude Code and OpenAI Codex) as a small engineering team with a defined operating model:
 
 - **A division of labor with review gates.** One agent does data and engine work in the canonical repo; another acts as the review/promotion/deploy gate. Nothing reaches customers without passing that gate.
 - **Verification over trust.** Every build is checked against live sources and a test suite before it ships; I treat agent output as a draft to be proven, not accepted.
 - **Incident recovery as a first-class skill.** I've recovered the system from real failures (a repository-corruption event, a destructive data regression) without losing the product.
 
-The judgment — architecture, what to trust, what to keep proprietary, what's safe to tell a customer — is mine. The agents are a force multiplier that lets one person ship and operate something that normally takes a team. That operating model, not any single feature, is the thing I'd bring to a team adopting AI-native development.
+The judgment is mine: architecture, what to trust, what to keep proprietary, what's safe to tell a customer. The agents are a force multiplier that lets one person ship and operate something that normally takes a team. That operating model, not any single feature, is the thing I'd bring to a team adopting AI-native development.
 
 There's a second, quieter judgment in the product: I use AI agents to *build* it, but the engine itself is deterministic. The compliance-critical answers (flood zone, insurance, zoning) never pass through a language model. In a domain next to insurance and lending, an answer has to be reproducible and traceable to an official source every time, so the model stays out of the hot path and the sources speak for themselves. Knowing where AI belongs, and where it doesn't, is what the whole product rests on.
 
@@ -82,14 +84,8 @@ There's a second, quieter judgment in the product: I use AI agents to *build* it
 ## Results
 
 - **Live and paid.** Real product, real checkout, in production at lastingground.com.
-- **Deep where it counts.** Parcel-level zoning is wired for 23 Massachusetts towns including the entire Cape; flood-insurance answers (zone, FIRM panel, map amendments, CRS discount, base-flood-elevation-vs-ground) are live statewide.
+- **Live coverage.** Parcel-zoning runs for 23 Massachusetts towns including the entire Cape; the flood-insurance answers run statewide.
 - **Verifiable engineering.** This repo ships runnable example logic with **18 passing tests at 93.29% line coverage in CI**, architecture docs, and decision records — so a reviewer can inspect the *kind* of work without the proprietary internals.
-
----
-
-## Honest limits
-
-It's a solo-operated system, so resilience and bus-factor are real considerations I manage deliberately. Cold-query latency on a brand-new address is a few seconds because the answers are genuinely live, not pre-canned. Coverage is deepest in the highest-value markets first (coastal and island Massachusetts) and expands by design rather than all at once. And the product is explicitly **informational** — it names the board, agency, or licensed-professional lane a question belongs to without ever making that determination itself.
 
 ---
 
