@@ -4,7 +4,7 @@
 
 ### An answer engine for public records
 
-Type a Massachusetts address. In seconds, get source-cited answers on flood, zoning, and insurance, assembled live from a dozen-plus official government systems and stamped with the source and date for every line. A live, paid product I designed and operate solo.
+Type any U.S. property address. In seconds, get source-cited public-records answers, assembled live from a dozen-plus official government systems and stamped with the source and date for every line. A live, paid product I designed and operate solo.
 
 [**lastingground.com**](https://lastingground.com) &nbsp;·&nbsp; [**Case study**](docs/case-study.md) &nbsp;·&nbsp; [**How I built it**](https://github.com/sulmusic2-star/agentic-engineering)
 
@@ -17,7 +17,7 @@ Type a Massachusetts address. In seconds, get source-cited answers on flood, zon
 
 ---
 
-![The Lasting Ground answer engine: one Massachusetts address resolved into eleven source-cited answers, grouped by source and stamped with the date each was checked.](docs/assets/live-answers.png)
+![The Lasting Ground answer engine: a U.S. property address (a Massachusetts example shown) resolved into eleven source-cited answers, grouped by source and stamped with the date each was checked.](docs/assets/live-answers.png)
 
 > This repo is a public showcase of the engineering: runnable, tested examples of the validation and packet logic on synthetic input. The product's source-acquisition pipeline — how specific records are discovered, accessed, and normalized — is its competitive moat and is kept proprietary. Full reasoning is in the [case study](docs/case-study.md).
 
@@ -44,7 +44,7 @@ flowchart TD
   F --> G[Free snapshot / paid report<br/>paywall enforced server-side]
 ```
 
-**Source families:** FEMA NFHL, OpenFEMA, MassGIS and regional GIS, state environmental and natural-heritage layers, state historic inventory, and municipal public records where a town publishes them. *(Which municipal systems, and how they're accessed, is the proprietary part.)*
+**Source families:** Any U.S. address resolves with FEMA NFHL, OpenFEMA, and national layers. On top of that baseline, deep state-specific source packs are live across 20+ states and Washington, DC, each adding that state's own official public layers (cadastral, roads, environmental, natural-heritage, and historic layers, and the like). Massachusetts is the deepest, adding town building-permit records and parcel-level zoning. *(Which municipal systems, and how they're accessed, is the proprietary part.)*
 
 ## How I built it
 
