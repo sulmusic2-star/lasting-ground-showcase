@@ -44,7 +44,7 @@ flowchart TD
   F --> G[Free snapshot / paid report<br/>paywall enforced server-side]
 ```
 
-**Source families:** Any U.S. address resolves with FEMA NFHL, OpenFEMA, and national layers. On top of that baseline, deep state-specific source packs are live across 20+ states and Washington, DC, each adding that state's own official public layers (cadastral, roads, environmental, natural-heritage, and historic layers, and the like). Massachusetts is the deepest, adding town building-permit records and parcel-level zoning. *(Which municipal systems, and how they're accessed, is the proprietary part.)*
+**Source families:** Any U.S. address resolves with FEMA NFHL, OpenFEMA, and national layers, so the product is available in every U.S. state and Washington, DC. On top of that baseline, covered states add their own official public layers (cadastral, roads, environmental, natural-heritage, and historic layers, and the like), and local building-permit records and parcel-level zoning come in where towns publish them. *(Which municipal systems, and how they're accessed, is the proprietary part.)*
 
 ## How I built it
 

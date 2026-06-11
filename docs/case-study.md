@@ -48,7 +48,7 @@ Address ─▶ verify + resolve to parcel ─▶ fan out to official sources (pa
 
 - **~200 backend services** in a Python/FastAPI engine (thousands of modules), with source registries, schedulers, and nightly refresh runners.
 - Each address triggers **a dozen-plus live queries** against official federal, state, and regional sources; every returned answer is stamped with its source and the date it was checked.
-- **Source families:** Any U.S. address resolves with FEMA NFHL (flood zones, FIRM panels, map amendments), the OpenFEMA NFIP program data, and national layers. On top of that baseline, deep state-specific source packs are live across 20+ states and Washington, DC, each adding that state's own official public layers (cadastral, roads, environmental, natural-heritage, and historic layers, and the like). Massachusetts is the deepest, adding town building-permit records and parcel-level zoning. *(Which municipal systems, and how they're accessed and normalized, is the proprietary part.)*
+- **Source families:** Any U.S. address resolves with FEMA NFHL (flood zones, FIRM panels, map amendments), the OpenFEMA NFIP program data, and national layers, so the product is available in every U.S. state and Washington, DC. On top of that baseline, covered states add their own official public layers (cadastral, roads, environmental, natural-heritage, and historic layers, and the like), and local building-permit records and parcel-level zoning come in where towns publish them. *(Which municipal systems, and how they're accessed and normalized, is the proprietary part.)*
 - **Per-town / per-region "support-depth" tiers** — a coastal town, an island town, and an inland city expose different things, so local context is modeled as a product feature with explicit freshness dates, not hardcoded.
 
 ---
@@ -84,7 +84,7 @@ There's a second, quieter judgment in the product: I use AI agents to *build* it
 ## Results
 
 - **Live and paid.** Real product, real checkout, in production at lastingground.com.
-- **Live coverage.** Any U.S. address resolves, with FEMA flood nationwide and deep public-source packs live across 20+ states and Washington, DC. Massachusetts is the deepest, adding town building-permit records and parcel-level zoning (23 towns, including the entire Cape).
+- **Live coverage.** Any U.S. address resolves, with FEMA flood and national layers nationwide across every state and Washington, DC, plus local building-permit records and parcel-level zoning where towns publish them.
 - **Verifiable engineering.** This repo ships runnable example logic with **18 passing tests at 93.29% line coverage in CI**, architecture docs, and decision records — so a reviewer can inspect the *kind* of work without the proprietary internals.
 
 ---
