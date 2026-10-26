@@ -1,58 +1,27 @@
-<div align="center">
-
 # Lasting Ground
 
-### An answer engine for public records
+Property research with official records and their sources in view.
 
-Type any U.S. property address. In seconds, get source-cited public-records answers, assembled live from a dozen-plus official government systems and stamped with the source and date for every line. A live, paid product I designed and operate solo.
+[Public search](https://lastingground.com) · [Case study](docs/case-study.md) · [Technical decisions](docs/engineering-decisions.md)
 
-[**lastingground.com**](https://lastingground.com) &nbsp;·&nbsp; [**Case study**](docs/case-study.md) &nbsp;·&nbsp; [**How I built it**](https://github.com/sulmusic2-star/agentic-engineering)
+![Lasting Ground public search interface, captured October 26, 2026](https://raw.githubusercontent.com/sulmusic2-star/sulmusic2-star.github.io/main/assets/property-search-20261026.png)
 
-[![CI](https://img.shields.io/badge/CI-passing-2c5b3a?style=flat-square)](https://github.com/sulmusic2-star/lasting-ground-showcase/actions)
-[![tests](https://img.shields.io/badge/tests-18_passing-2c5b3a?style=flat-square)](https://github.com/sulmusic2-star/lasting-ground-showcase/actions)
-[![coverage](https://img.shields.io/badge/coverage-93.29%25-2c5b3a?style=flat-square)](docs/coverage-summary.md)
-[![live](https://img.shields.io/badge/live-lastingground.com-34d399?style=flat-square)](https://lastingground.com)
+## Public examples
 
-</div>
+This repository contains synthetic Python examples of source validation, evidence scoring and report assembly. The full application and its source-acquisition system are private. These examples can be inspected offline; they do not establish the application's geographic coverage or the correctness of a live property answer.
 
----
+## Start with the code
 
-![The Lasting Ground answer engine: a U.S. property address (a Massachusetts example shown) resolved into eleven source-cited answers, grouped by source and stamped with the date each was checked.](docs/assets/live-answers.png)
+- [Source validation](examples/source_lane_validation.py) keeps validated, caution and missing records distinct.
+- [Evidence scoring](examples/evidence_scoring.py) models source authority, freshness and review actions.
+- [Packet composition](examples/packet_composer.py) assembles sections from validation results.
+- [Packet language](examples/packet_language.py) constrains wording when evidence is incomplete.
 
-> This repo is a public showcase of the engineering: runnable, tested examples of the validation and packet logic on synthetic input. The product's source-acquisition pipeline — how specific records are discovered, accessed, and normalized — is its competitive moat and is kept proprietary. Full reasoning is in the [case study](docs/case-study.md).
+The [architecture notes](docs/system-architecture.md) and [decision records](docs/adr/README.md) explain the structure.
 
-## What it does
+## Run locally
 
-Before someone buys, renovates, or lends against a property, the same questions come up: Is it in a FEMA flood zone, and what will insurance cost? Was it mapped out of the floodplain? Are there wetlands, contamination, or zoning limits?
-
-Those answers live in dozens of disconnected government systems. Lasting Ground turns one address into a source-cited answer set in seconds, and tells you, for every line, which official source it came from and when.
-
-## How it's built
-
-- **~200 backend services** (Python / FastAPI) with source registries, schedulers, and nightly refresh runners.
-- Each address fans out to **a dozen-plus live queries** against official federal, state, and municipal sources; every answer carries its source name and date.
-- A **serverless edge front end** (Cloudflare Pages + Functions, Google Places, Stripe) over the engine, with the paywall enforced server-side.
-- **Deterministic by design.** The compliance-critical answers never pass through a language model, so they stay reproducible and traceable to an official source.
-
-```mermaid
-flowchart TD
-  A[Address] --> B[Verify + resolve to parcel]
-  B --> C[Fan out to official sources, in parallel]
-  C --> D[Deterministic answer catalog<br/>each answer carries source + date + scope]
-  D --> E[Support-depth + routing rules]
-  E --> F[Audit gate]
-  F --> G[Free snapshot / paid report<br/>paywall enforced server-side]
-```
-
-**Source families:** Any U.S. address resolves with FEMA NFHL, OpenFEMA, and national layers, so the product is available in every U.S. state and Washington, DC. On top of that baseline, covered states add their own official public layers (cadastral, roads, environmental, natural-heritage, and historic layers, and the like), and local building-permit records and parcel-level zoning come in where towns publish them. *(Which municipal systems, and how they're accessed, is the proprietary part.)*
-
-## How I built it
-
-Solo, by orchestrating AI coding agents (Claude Code and OpenAI Codex) with review gates and verification before anything ships. The judgment is mine: architecture, what to trust, and where a model belongs versus where it doesn't. I wrote that operating model up, with runnable examples, in **[agentic-engineering](https://github.com/sulmusic2-star/agentic-engineering)**.
-
-## Inspect the engineering
-
-This repo runs offline on synthetic input:
+Requires Python 3.11 or newer.
 
 ```bash
 python -m pip install -e ".[dev]"
@@ -60,12 +29,12 @@ make ci
 python examples/source_lane_validation.py
 ```
 
-**18 passing tests at 93.29% line coverage.** Start with the [case study](docs/case-study.md), then the [evaluator guide](docs/evaluator-guide.md), the [ADRs](docs/adr/README.md), and the example logic: [`evidence_scoring.py`](examples/evidence_scoring.py), [`source_lane_validation.py`](examples/source_lane_validation.py), [`packet_composer.py`](examples/packet_composer.py).
+The tests apply to the public examples. See the [testing notes](docs/testing.md) for their scope.
 
 ## Scope
 
-Informational only. Not a survey, attorney opinion, engineering advice, insurance or lending advice, or a determination by any municipal board. Where the source trail points to a board, agency, or licensed professional, the product names that context without making the determination itself.
+The public search interface is available at [lastingground.com](https://lastingground.com). Answers depend on the records available for an address, and access may be required. The screenshot shows the public search page on October 26, 2026.
 
----
+This work provides informational source context. It does not replace a survey, an official determination or legal, engineering, insurance or lending advice.
 
-[**lastingground.com**](https://lastingground.com) &nbsp;·&nbsp; [hello@lastingground.com](mailto:hello@lastingground.com) &nbsp;·&nbsp; [Portfolio](https://sulmusic2-star.github.io/)
+[Tim Sullivan](https://sulmusic2-star.github.io/) · [Contact](mailto:hello@lastingground.com)
