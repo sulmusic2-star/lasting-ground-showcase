@@ -10,7 +10,7 @@ The source-lane model decides what is supported before any human-readable packet
 
 ## Support depth is earned, not counted
 
-A larger number of URLs does not automatically mean stronger support. The validation output weighs lane status, reviewed dates, and supported claims before assigning support depth.
+A larger number of URLs does not automatically mean stronger support. In this synthetic example, the support-depth label uses counts of declared lane states. Missing review dates and empty claim lists produce warnings, but those warnings do not lower the label. The separate evidence-scoring module explores richer scoring rules; the source validator does not independently verify a record or its authority.
 
 ## Keep packet language constrained
 
