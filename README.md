@@ -2,9 +2,9 @@
 
 Property research with official records and their sources in view.
 
-[Public search](https://lastingground.com) · [Case study](docs/case-study.md) · [Technical decisions](docs/engineering-decisions.md)
+[Public search](https://lastingground.com) · [Interactive case study](https://sulmusic2-star.github.io/case-studies/lasting-ground/) · [Technical decisions](docs/engineering-decisions.md)
 
-![Lasting Ground public search interface, captured October 26, 2026](https://raw.githubusercontent.com/sulmusic2-star/sulmusic2-star.github.io/main/assets/property-search-20261026.png)
+[![Lasting Ground case study with an illustrative 3D boundary model](https://raw.githubusercontent.com/sulmusic2-star/sulmusic2-star.github.io/main/assets/lasting-ground-cover.webp)](https://sulmusic2-star.github.io/case-studies/lasting-ground/)
 
 ## Public examples
 
@@ -33,7 +33,7 @@ The tests apply to the public examples. See the [testing notes](docs/testing.md)
 
 ## Scope
 
-The public search interface is available at [lastingground.com](https://lastingground.com). Answers depend on the records available for an address, and access may be required. The screenshot shows the public search page on October 26, 2026.
+The public search interface is available at [lastingground.com](https://lastingground.com). Answers depend on the records available for an address, and access may be required. The cover shows a synthetic boundary model, not a real property. The linked case study includes the public search capture and a separate archived source example.
 
 This work provides informational source context. It does not replace a survey, an official determination or legal, engineering, insurance or lending advice.
 
