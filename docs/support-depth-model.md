@@ -1,23 +1,21 @@
 # Support Depth Model
 
-Support depth is a way to describe how strong the local/source-backed context is for a given area.
+Support depth describes how much the available records support a property report.
 
-This showcase uses a simplified support-depth model. The concept is:
+These are the intended meanings of the labels. The public validator is a simplified example that counts supplied lane states; it does not independently check record quality.
 
 ## Lower support
 
-The system has enough broad public/regional context to produce a cautious screening artifact, but local evidence is thin or incomplete.
+Regional records provide background, but local records are limited or incomplete.
 
 ## Standard support
 
-The system has meaningful local or regional source coverage, enough to route the reader toward relevant public context, while still disclosing missing lanes.
+Local or regional records help direct the reader to relevant information. Missing records remain listed.
 
 ## Higher support
 
-The system has deeper, durable, source-backed local coverage across the lanes that matter for the product’s artifact type.
+Local records cover the subjects needed for the report and support its statements.
 
 ## Guardrail
 
-Support depth is not a marketing label. It should not be promoted unless the source set actually supports it.
-
-The important implementation principle is honesty over breadth: more URLs do not automatically mean better support.
+A higher label needs support from the records. More URLs alone do not establish that support.

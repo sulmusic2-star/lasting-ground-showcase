@@ -1,6 +1,6 @@
 # Coverage Summary
 
-Generated from `make coverage`. This measures the public validation examples that support the showcase packet flow.
+Generated from `make coverage`. It measures the public record-checking and report examples.
 
 ## Overall
 

@@ -1,6 +1,6 @@
 # Sample Validation Gate
 
-This example shows how a source-backed review system can keep weak evidence from becoming overconfident language.
+These proposed report checks identify unsupported claims and missing records.
 
 ## Gate checks
 
@@ -20,6 +20,6 @@ Reason: regional and local source context exists, but one local record lane is i
 Public wording: "The packet found public context that may be relevant, but this lane should be verified before making a property-specific conclusion."
 ```
 
-## Why this matters
+## Limits
 
-The system should make useful artifacts without pretending that incomplete public records are complete certainty.
+These are example review rules. A property-specific conclusion still requires the relevant records and review.

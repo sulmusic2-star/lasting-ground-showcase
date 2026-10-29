@@ -23,12 +23,12 @@ make coverage
 - validation output matches the committed sample JSON
 - missing lanes become visible warnings
 - validated lanes need supported claims and review dates
-- support depth is not promoted from source count alone
+- support-depth labels follow supplied lane-state counts; the validator does not independently check record quality
 - unexpected lane statuses are rejected
 - packet summaries avoid overconfident language
 - evidence scores reflect source authority, freshness, support, and missing lanes
 - packet sections keep uncertainty and review focus visible
 
-## Why this matters
+## Limits
 
-The product depends on not overstating evidence. The tests show how incomplete sources stay visible instead of turning into confident claims.
+These tests cover fictional inputs and public example code. They do not establish live record accuracy or the behavior of the full application.

@@ -35,6 +35,6 @@ The tests apply to the public examples. See the [testing notes](docs/testing.md)
 
 The public search interface is available at [lastingground.com](https://lastingground.com). Answers depend on the records available for an address, and access may be required. The cover and case study use screenshots of the public interface alongside labeled fictional record-check and report examples. GroundTruth-Geo is a [supporting evaluation study](https://sulmusic2-star.github.io/notes/groundtruth-geo/).
 
-These examples help organize property records. It does not replace a survey, an official determination or legal, engineering, insurance or lending advice.
+These examples help organize property records. They do not replace a survey, an official determination or legal, engineering, insurance or lending advice.
 
 [Tim Sullivan](https://sulmusic2-star.github.io/) · [Contact](mailto:hello@lastingground.com)

@@ -1,6 +1,6 @@
 # System Architecture
 
-Lasting Ground is organized around a source-backed review workflow.
+This diagram outlines how property records move from an address search into a report.
 
 ```mermaid
 flowchart LR
@@ -43,7 +43,7 @@ flowchart LR
 
 ### Frontend
 
-Public-facing intake and explanation surfaces. The frontend should make the product understandable without overpromising certainty.
+The interface handles the search and explains results, missing records and limits.
 
 ### Backend
 
@@ -57,6 +57,6 @@ Reusable regional and town-specific context packs. Packs separate local source c
 
 Release gates and support-depth checks prevent the product from overstating what the source set can actually prove.
 
-## Shareable abstraction
+## Responsibilities
 
-The key architectural lesson is to separate evidence collection, deterministic routing, claim boundaries, and user-facing explanation.
+Record retrieval, routing rules, supported claims and report wording are separate parts of the system.

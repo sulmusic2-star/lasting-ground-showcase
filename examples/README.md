@@ -1,16 +1,16 @@
 # Lasting Ground Code Examples
 
-Small examples that show how the evidence model can become a validation output before a packet is generated.
+These examples check supplied records before assembling a report.
 
 ## Files
 
-- [`sample_packet_input.json`](sample_packet_input.json) — sample source-lane input
-- [`source_lane_validation.py`](source_lane_validation.py) — validation logic for lane status, warnings, and support depth
-- [`sample_validation_output.json`](sample_validation_output.json) — generated output from the validation script
-- [`packet_language.py`](packet_language.py) — cautious packet summary helpers
-- [`evidence_scoring.py`](evidence_scoring.py) — source authority, freshness, and readiness scoring
-- [`packet_composer.py`](packet_composer.py) — reviewable packet-section planning
-- [`sample_packet_summary.txt`](sample_packet_summary.txt) — generated language sample
+- [`sample_packet_input.json`](sample_packet_input.json): sample source-lane input
+- [`source_lane_validation.py`](source_lane_validation.py): validation logic for lane status, warnings, and support depth
+- [`sample_validation_output.json`](sample_validation_output.json): generated output from the validation script
+- [`packet_language.py`](packet_language.py): cautious packet summary helpers
+- [`evidence_scoring.py`](evidence_scoring.py): source authority, freshness, and readiness scoring
+- [`packet_composer.py`](packet_composer.py): report-section planning
+- [`sample_packet_summary.txt`](sample_packet_summary.txt): generated language sample
 
 ## Run it
 
@@ -29,7 +29,7 @@ PY
 - treating missing evidence as a visible product state
 - separating source support from final packet language
 - using validation gates before generating stronger claims
-- making support depth depend on source quality, not just source count
-- keeping generated packet language cautious and source-tied
+- assigning a support label from supplied lane states; the separate scoring example also considers authority and freshness
+- keeping report wording within what the records support
 - scoring evidence by authority, freshness, support, and missing-lane blockers
 - composing packet sections from validation output instead of free-form claims

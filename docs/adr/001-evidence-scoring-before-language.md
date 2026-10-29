@@ -2,7 +2,7 @@
 
 ## Context
 
-A property packet can look confident even when the supporting public context is incomplete. The system needs to prevent readable language from outrunning the source evidence.
+A property report can sound certain even when records are incomplete. Its wording needs to reflect those gaps.
 
 ## Decision
 
@@ -10,7 +10,7 @@ Packet language is downstream of evidence scoring. Source lanes are scored for a
 
 ## Tradeoff
 
-This produces more cautious packets and requires more validation code. The benefit is that the artifact stays source-bounded and reviewable.
+This produces more cautious packets and requires more validation code. Readers can trace each statement to the records that support it.
 
 ## Consequences
 
@@ -18,7 +18,7 @@ This produces more cautious packets and requires more validation code. The benef
 - Stronger wording requires stronger support.
 - Generated packet sections can cite the validation state they came from.
 
-## Public proof
+## Code and tests
 
 - [`examples/evidence_scoring.py`](../../examples/evidence_scoring.py)
 - [`tests/test_evidence_scoring.py`](../../tests/test_evidence_scoring.py)

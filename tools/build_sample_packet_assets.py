@@ -103,24 +103,24 @@ def header(cmds, page_title="Lasting Ground"):
     cmds.append(rgb(248, 250, 252)); cmds.append(f"0 0 {W} {H} re f")
     cmds.append(rgb(7, 17, 31)); cmds.append(f"0 {H-86} {W} 86 re f")
     text(cmds, 40, H-40, page_title, 20, True, (255,255,255))
-    text(cmds, 40, H-62, "Sample source-backed review packet - sample data", 10, False, (209,213,219))
-    text(cmds, 40, 28, "Public showcase sample. Not legal, engineering, inspection, or permitting advice.", 8, False, (100,116,139))
+    text(cmds, 40, H-62, "Sample property report - fictional data", 10, False, (209,213,219))
+    text(cmds, 40, 28, "Fictional example. Not legal, engineering, inspection, or permitting advice.", 8, False, (100,116,139))
 
 
 def page_cover(pdf: MiniPDF):
     c=[]; header(c)
     text(c, 40, 646, "42 Harbor View Road", 30, True, (15,23,42))
-    for i,line in enumerate(wrap_lines("This fake packet demonstrates the artifact shape, source appendix, and validation posture of a source-backed property review system without using any real address.", 70)):
+    for i,line in enumerate(wrap_lines("This fictional report shows how property records, missing information and review notes appear together. It does not describe a real property.", 70)):
         text(c, 40, 610-i*15, line, 11, False, (51,65,85))
     rect(c, 40, 430, 250, 90, (255,251,235), (251,191,36))
     text(c, 60, 488, "FICTIONAL SAMPLE", 16, True, (146,64,14))
-    text(c, 60, 462, "SOURCE-BACKED", 16, True, (146,64,14))
+    text(c, 60, 462, "EXAMPLE RECORDS", 16, True, (146,64,14))
     rect(c, 322, 430, 250, 90, (236,253,245), (34,197,94))
     text(c, 342, 488, "Packet purpose", 14, True, (21,128,61))
-    for i,line in enumerate(wrap_lines("Translate fragmented public and official context into a reviewable, homeowner-readable packet while preserving uncertainty and source boundaries.", 36)):
+    for i,line in enumerate(wrap_lines("Bring property records together.\nShow what is known and what\nstill needs checking.", 36)):
         text(c,342,466-i*13,line,9,False,(22,101,52))
     text(c,40,366,"What this sample shows",18,True,(15,23,42))
-    items=["source lane summary","support-depth caution","validation gate","plain-English findings","source appendix with claim boundaries"]
+    items=["record summary","support-depth caution","validation gate","plain-English findings","records and their limits"]
     for i,it in enumerate(items):
         text(c,60,334-i*22,f"- {it}",12,False,(51,65,85))
     rect(c,40,132,532,92,(239,246,255),(96,165,250))
@@ -132,8 +132,8 @@ def page_cover(pdf: MiniPDF):
 
 def page_lanes(pdf: MiniPDF):
     c=[]; header(c)
-    text(c,40,670,"1. Source Lane Summary",22,True,(15,23,42))
-    for i,line in enumerate(wrap_lines("A source lane is a category of evidence. The system should track what each lane supports and what it does not support.",74)):
+    text(c,40,670,"1. Record summary",22,True,(15,23,42))
+    for i,line in enumerate(wrap_lines("Each record belongs to a category. The report lists what those records support and what remains unknown.",74)):
         text(c,40,642-i*14,line,10,False,(51,65,85))
     rows=[("State GIS Context","VALIDATED","Broad regional screening context."),("Town Zoning Reference","VALIDATED","Local routing/reference context."),("Conservation Record Lane","CAUTION","Public lane incomplete; disclose uncertainty."),("Flood Context","VALIDATED","Regional flood-context layer available."),("Permit History Packet","MISSING","No complete local packet in this sample.")]
     y=570
@@ -180,8 +180,8 @@ def page_gate(pdf: MiniPDF):
 
 def page_sources(pdf: MiniPDF):
     c=[]; header(c)
-    text(c,40,670,"4. Sample Source Appendix",22,True,(15,23,42))
-    for i,line in enumerate(wrap_lines("A useful packet should show source provenance and claim boundaries in plain English.",74)):
+    text(c,40,670,"4. Example records",22,True,(15,23,42))
+    for i,line in enumerate(wrap_lines("List where each record came from and what it supports.",74)):
         text(c,40,642-i*14,line,10,False,(51,65,85))
     rows=[("sample_state_gis","regional_context","Supports broad screening context; does not support parcel-specific legal conclusion."),("sample_town_zoning","local_reference","Supports local routing context; does not predict approval."),("sample_conservation_records","public_records","Supports review-history direction; incomplete in this sample."),("sample_flood_context","regional_layer","Supports flood-context screening; does not provide engineering design advice.")]
     y=570
@@ -206,7 +206,7 @@ def build_cover():
     d=ImageDraw.Draw(im)
     d.rectangle((0,0,1200,190),fill="#07111f")
     d.text((72,62),"Lasting Ground",font=_font(54,True),fill="white")
-    d.text((72,124),"Sample source-backed review packet - sample data",font=_font(24),fill="#cbd5e1")
+    d.text((72,124),"Sample property report - fictional data",font=_font(24),fill="#cbd5e1")
     d.text((72,280),"42 Harbor View Road",font=_font(66,True),fill="#0f172a")
     d.text((72,365),"FICTIONAL SAMPLE",font=_font(30,True),fill="#92400e")
     d.rounded_rectangle((72,480,1128,720),radius=32,fill="#eff6ff",outline="#93c5fd",width=3)
@@ -215,18 +215,18 @@ def build_cover():
     y=582
     for line in lines:
         d.text((112,y),line,font=_font(26),fill="#1e3a8a"); y+=34
-    d.text((72,820),"What the packet demonstrates",font=_font(38,True),fill="#0f172a")
-    items=["Source lane summary","Validation gate","Plain-English findings","Source appendix","Explicit claim boundaries"]
+    d.text((72,820),"What this sample shows",font=_font(38,True),fill="#0f172a")
+    items=["Record summary","Validation gate","Plain-English findings","Records","Limits"]
     y=900
     for item in items:
         d.text((110,y),f"- {item}",font=_font(31),fill="#334155"); y+=54
     d.rectangle((72,1350,1128,1352),fill="#cbd5e1")
-    d.text((72,1392),"Public showcase sample. Not legal, engineering, inspection, or permitting advice.",font=_font(22),fill="#64748b")
+    d.text((72,1392),"Fictional example. Not legal, engineering, inspection, or permitting advice.",font=_font(22),fill="#64748b")
     im.save(COVER_PATH,quality=94)
 
 
 def build_html():
-    HTML_PATH.write_text("""<!doctype html><meta charset='utf-8'><title>Lasting Ground Sample Packet</title><body style='font-family:system-ui;margin:40px;max-width:900px'><h1>Lasting Ground sample packet</h1><p>Fake-data sample artifact source. Open the PDF from the live demo.</p><p><a href='lasting-ground-sample-packet.pdf'>PDF</a></p><p><a href='lasting-ground-sample-packet-cover.png'>Cover preview</a></p></body>\n""")
+    HTML_PATH.write_text("""<!doctype html><meta charset='utf-8'><title>Lasting Ground Sample Packet</title><body style='font-family:system-ui;margin:40px;max-width:900px'><h1>Lasting Ground sample packet</h1><p>A fictional property report. Open the PDF or its cover preview.</p><p><a href='lasting-ground-sample-packet.pdf'>PDF</a></p><p><a href='lasting-ground-sample-packet-cover.png'>Cover preview</a></p></body>\n""")
 
 
 def main():

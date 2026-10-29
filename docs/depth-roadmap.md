@@ -1,10 +1,10 @@
-# What To Add Next
+# Further examples
 
-Ways to make this showcase deeper for reviewers:
+Ideas for extending the public examples:
 
-## 1. Add a fake sample packet PDF
+## 1. Extend the sample report
 
-Use sample data and clear wording. Show the final artifact shape without using a real address.
+Use fictional data and clear captions when adding report examples.
 
 ## 2. Add source-lane examples
 
@@ -22,7 +22,7 @@ Expand `sample-artifacts/sample-validation-gate.md` with more pass/fail examples
 
 ## 4. Add screenshots or diagrams
 
-Good shareable visuals:
+Possible diagrams:
 
 - intake flow
 - evidence registry concept

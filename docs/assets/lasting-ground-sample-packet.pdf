@@ -13,7 +13,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 5 0 obj
-<< /Length 2444 >>
+<< /Length 2225 >>
 stream
 0.973 0.980 0.988 rg
 0 0 612 792 re f
@@ -22,43 +22,39 @@ stream
 1.000 1.000 1.000 rg
 BT /F2 20 Tf 40 752 Td (Lasting Ground) Tj ET
 0.820 0.835 0.859 rg
-BT /F1 10 Tf 40 730 Td (Sample source-backed review packet - sample data) Tj ET
+BT /F1 10 Tf 40 730 Td (Sample property report - fictional data) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8 Tf 40 28 Td (Public showcase sample. Not legal, engineering, inspection, or permitting advice.) Tj ET
+BT /F1 8 Tf 40 28 Td (Fictional example. Not legal, engineering, inspection, or permitting advice.) Tj ET
 0.059 0.090 0.165 rg
 BT /F2 30 Tf 40 646 Td (42 Harbor View Road) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 11 Tf 40 610 Td (This fake packet demonstrates the artifact shape, source appendix, and) Tj ET
+BT /F1 11 Tf 40 610 Td (This fictional report shows how property records, missing information) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 11 Tf 40 595 Td (validation posture of a source-backed property review system without) Tj ET
+BT /F1 11 Tf 40 595 Td (and review notes appear together. It does not describe a real) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 11 Tf 40 580 Td (using any real address.) Tj ET
+BT /F1 11 Tf 40 580 Td (property.) Tj ET
 1.000 0.984 0.922 rg
 0.984 0.749 0.141 RG
 40 430 250 90 re B
 0.573 0.251 0.055 rg
 BT /F2 16 Tf 60 488 Td (FICTIONAL SAMPLE) Tj ET
 0.573 0.251 0.055 rg
-BT /F2 16 Tf 60 462 Td (SOURCE-BACKED) Tj ET
+BT /F2 16 Tf 60 462 Td (EXAMPLE RECORDS) Tj ET
 0.925 0.992 0.961 rg
 0.133 0.773 0.369 RG
 322 430 250 90 re B
 0.082 0.502 0.239 rg
 BT /F2 14 Tf 342 488 Td (Packet purpose) Tj ET
 0.086 0.396 0.204 rg
-BT /F1 9 Tf 342 466 Td (Translate fragmented public and) Tj ET
+BT /F1 9 Tf 342 466 Td (Bring property records together.) Tj ET
 0.086 0.396 0.204 rg
-BT /F1 9 Tf 342 453 Td (official context into a reviewable,) Tj ET
+BT /F1 9 Tf 342 453 Td (Show what is known and what) Tj ET
 0.086 0.396 0.204 rg
-BT /F1 9 Tf 342 440 Td (homeowner-readable packet while) Tj ET
-0.086 0.396 0.204 rg
-BT /F1 9 Tf 342 427 Td (preserving uncertainty and source) Tj ET
-0.086 0.396 0.204 rg
-BT /F1 9 Tf 342 414 Td (boundaries.) Tj ET
+BT /F1 9 Tf 342 440 Td (still needs checking.) Tj ET
 0.059 0.090 0.165 rg
 BT /F2 18 Tf 40 366 Td (What this sample shows) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 12 Tf 60 334 Td (- source lane summary) Tj ET
+BT /F1 12 Tf 60 334 Td (- record summary) Tj ET
 0.200 0.255 0.333 rg
 BT /F1 12 Tf 60 312 Td (- support-depth caution) Tj ET
 0.200 0.255 0.333 rg
@@ -66,7 +62,7 @@ BT /F1 12 Tf 60 290 Td (- validation gate) Tj ET
 0.200 0.255 0.333 rg
 BT /F1 12 Tf 60 268 Td (- plain-English findings) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 12 Tf 60 246 Td (- source appendix with claim boundaries) Tj ET
+BT /F1 12 Tf 60 246 Td (- records and their limits) Tj ET
 0.937 0.965 1.000 rg
 0.376 0.647 0.980 RG
 40 132 532 92 re B
@@ -84,7 +80,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
 endobj
 7 0 obj
-<< /Length 2100 >>
+<< /Length 2067 >>
 stream
 0.973 0.980 0.988 rg
 0 0 612 792 re f
@@ -93,15 +89,15 @@ stream
 1.000 1.000 1.000 rg
 BT /F2 20 Tf 40 752 Td (Lasting Ground) Tj ET
 0.820 0.835 0.859 rg
-BT /F1 10 Tf 40 730 Td (Sample source-backed review packet - sample data) Tj ET
+BT /F1 10 Tf 40 730 Td (Sample property report - fictional data) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8 Tf 40 28 Td (Public showcase sample. Not legal, engineering, inspection, or permitting advice.) Tj ET
+BT /F1 8 Tf 40 28 Td (Fictional example. Not legal, engineering, inspection, or permitting advice.) Tj ET
 0.059 0.090 0.165 rg
-BT /F2 22 Tf 40 670 Td (1. Source Lane Summary) Tj ET
+BT /F2 22 Tf 40 670 Td (1. Record summary) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 10 Tf 40 642 Td (A source lane is a category of evidence. The system should track what each) Tj ET
+BT /F1 10 Tf 40 642 Td (Each record belongs to a category. The report lists what those records) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 10 Tf 40 628 Td (lane supports and what it does not support.) Tj ET
+BT /F1 10 Tf 40 628 Td (support and what remains unknown.) Tj ET
 0.925 0.992 0.961 rg
 0.886 0.910 0.941 RG
 40 570 532 52 re B
@@ -153,7 +149,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
 endobj
 9 0 obj
-<< /Length 1502 >>
+<< /Length 1488 >>
 stream
 0.973 0.980 0.988 rg
 0 0 612 792 re f
@@ -162,9 +158,9 @@ stream
 1.000 1.000 1.000 rg
 BT /F2 20 Tf 40 752 Td (Lasting Ground) Tj ET
 0.820 0.835 0.859 rg
-BT /F1 10 Tf 40 730 Td (Sample source-backed review packet - sample data) Tj ET
+BT /F1 10 Tf 40 730 Td (Sample property report - fictional data) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8 Tf 40 28 Td (Public showcase sample. Not legal, engineering, inspection, or permitting advice.) Tj ET
+BT /F1 8 Tf 40 28 Td (Fictional example. Not legal, engineering, inspection, or permitting advice.) Tj ET
 0.059 0.090 0.165 rg
 BT /F2 22 Tf 40 670 Td (2. Plain-English Findings) Tj ET
 0.059 0.090 0.165 rg
@@ -195,7 +191,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
 endobj
 11 0 obj
-<< /Length 2019 >>
+<< /Length 2005 >>
 stream
 0.973 0.980 0.988 rg
 0 0 612 792 re f
@@ -204,9 +200,9 @@ stream
 1.000 1.000 1.000 rg
 BT /F2 20 Tf 40 752 Td (Lasting Ground) Tj ET
 0.820 0.835 0.859 rg
-BT /F1 10 Tf 40 730 Td (Sample source-backed review packet - sample data) Tj ET
+BT /F1 10 Tf 40 730 Td (Sample property report - fictional data) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8 Tf 40 28 Td (Public showcase sample. Not legal, engineering, inspection, or permitting advice.) Tj ET
+BT /F1 8 Tf 40 28 Td (Fictional example. Not legal, engineering, inspection, or permitting advice.) Tj ET
 0.059 0.090 0.165 rg
 BT /F2 22 Tf 40 670 Td (3. Validation Gate) Tj ET
 0.082 0.502 0.239 rg
@@ -256,7 +252,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
 endobj
 13 0 obj
-<< /Length 2147 >>
+<< /Length 2044 >>
 stream
 0.973 0.980 0.988 rg
 0 0 612 792 re f
@@ -265,15 +261,13 @@ stream
 1.000 1.000 1.000 rg
 BT /F2 20 Tf 40 752 Td (Lasting Ground) Tj ET
 0.820 0.835 0.859 rg
-BT /F1 10 Tf 40 730 Td (Sample source-backed review packet - sample data) Tj ET
+BT /F1 10 Tf 40 730 Td (Sample property report - fictional data) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8 Tf 40 28 Td (Public showcase sample. Not legal, engineering, inspection, or permitting advice.) Tj ET
+BT /F1 8 Tf 40 28 Td (Fictional example. Not legal, engineering, inspection, or permitting advice.) Tj ET
 0.059 0.090 0.165 rg
-BT /F2 22 Tf 40 670 Td (4. Sample Source Appendix) Tj ET
+BT /F2 22 Tf 40 670 Td (4. Example records) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 10 Tf 40 642 Td (A useful packet should show source provenance and claim boundaries in) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10 Tf 40 628 Td (plain English.) Tj ET
+BT /F1 10 Tf 40 642 Td (List where each record came from and what it supports.) Tj ET
 1.000 1.000 1.000 rg
 0.886 0.910 0.941 RG
 40 570 532 58 re B
@@ -331,16 +325,16 @@ xref
 0000000148 00000 n 
 0000000218 00000 n 
 0000000293 00000 n 
-0000002789 00000 n 
-0000002925 00000 n 
-0000005077 00000 n 
-0000005213 00000 n 
-0000006767 00000 n 
-0000006904 00000 n 
-0000008976 00000 n 
-0000009114 00000 n 
-0000011314 00000 n 
+0000002570 00000 n 
+0000002706 00000 n 
+0000004825 00000 n 
+0000004961 00000 n 
+0000006501 00000 n 
+0000006638 00000 n 
+0000008696 00000 n 
+0000008834 00000 n 
+0000010931 00000 n 
 trailer << /Size 15 /Root 1 0 R >>
 startxref
-11452
+11069
 %%EOF

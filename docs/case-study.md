@@ -6,7 +6,7 @@ Property research brings together records that often live in separate federal, s
 
 ## What this repository shows
 
-The public examples use synthetic inputs. They cover source-lane validation, evidence scoring, report composition and constrained summary language. The application source and source-acquisition system are private.
+The public examples use synthetic inputs. They cover source-lane validation, evidence scoring, report composition and constrained summary language. The application source and record-retrieval system are private.
 
 ## Technical decisions
 
@@ -24,6 +24,6 @@ The repository includes the example inputs, implementation and tests. A reader c
 
 ## Scope
 
-These files demonstrate a bounded approach to source validation and report assembly. They do not establish live-source accuracy, statewide or national coverage, paid adoption, revenue or production readiness. The public site's search interface was inspected on October 26, 2026; answers depend on available records and may require access.
+These examples check supplied records and assemble reports. They do not establish live-source accuracy, statewide or national coverage, paid adoption, revenue or production readiness. The public site's search interface was inspected on October 26, 2026; answers depend on available records and may require access.
 
 [Run the examples](../README.md#run-locally) · [Engineering decisions](engineering-decisions.md)

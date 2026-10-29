@@ -10,7 +10,7 @@ Support depth is modeled as a decision layer. Source lanes must satisfy required
 
 ## Tradeoff
 
-Some packets remain more conservative even when several sources exist. The benefit is that quality and coverage matter more than volume.
+Some packets remain more conservative even when several sources exist. The decision depends on which claims the records support.
 
 ## Consequences
 
@@ -18,7 +18,7 @@ Some packets remain more conservative even when several sources exist. The benef
 - Support-depth language stays tied to lane quality.
 - Reviewers can distinguish regional context from stronger local support.
 
-## Public proof
+## Code and tests
 
 - [`examples/source_lane_validation.py`](../../examples/source_lane_validation.py)
 - [`docs/support-depth-model.md`](../support-depth-model.md)

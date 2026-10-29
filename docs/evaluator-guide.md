@@ -1,12 +1,12 @@
-# Lasting Ground Evaluator Guide
+# Reviewing the Lasting Ground examples
 
-Use this if you are reviewing the repository quickly and want the strongest proof first.
+Start with the report, then inspect the code that produces it.
 
-## Thirty-second path
+## Where to start
 
 1. Open the live demo: https://sulmusic2-star.github.io/lasting-ground-showcase/
 2. Open the sample PDF packet: https://sulmusic2-star.github.io/lasting-ground-showcase/assets/lasting-ground-sample-packet.pdf
-3. Inspect the advanced evidence logic:
+3. Inspect the record checks and report code:
    - [`examples/evidence_scoring.py`](../examples/evidence_scoring.py)
    - [`examples/packet_composer.py`](../examples/packet_composer.py)
    - [`examples/source_lane_validation.py`](../examples/source_lane_validation.py)
@@ -16,12 +16,9 @@ Use this if you are reviewing the repository quickly and want the strongest proo
    - [GitHub Actions CI](https://github.com/sulmusic2-star/lasting-ground-showcase/actions/workflows/ci.yml)
 5. Read the case study: https://sulmusic2-star.github.io/case-studies/lasting-ground/
 
-## What this project is meant to prove
+## What the examples cover
 
-- Full-stack workflow thinking: source inputs, validation gates, support-depth decisions, generated artifacts.
-- Evidence discipline: source authority, freshness, missing-lane blockers, cautious packet language.
-- Operational design: review queues, release gates, sample artifacts, testable rules.
-- Communication: turning a complex domain into a packet a non-technical reader can understand.
+The Python examples take fictional records through validation, evidence scoring and report assembly. They show how missing information affects the output and which records need review. They do not retrieve or independently verify live property records.
 
 ## Files worth reading
 
@@ -33,6 +30,6 @@ Use this if you are reviewing the repository quickly and want the strongest proo
 | `examples/packet_language.py` | Guardrails against overconfident packet language. |
 | `tools/build_sample_packet_assets.py` | PDF/cover artifact generation. |
 
-## Why it is not just a PDF demo
+## Follow a result
 
-The PDF is the visible artifact. The examples show the operating system behind it: source-lane validation, evidence scoring, readiness decisions, review queues, and cautious language boundaries.
+Compare the input records, validation output and PDF. Warnings should remain visible when a record is missing or incomplete.

@@ -1,6 +1,6 @@
 # Evidence Model
 
-The evidence model is built to answer four questions:
+Each record needs to answer four questions:
 
 1. What source supports this statement?
 2. Is the source official, public, regional, local, or derived?
@@ -26,13 +26,13 @@ supports:
 
 ## Claim boundary
 
-A source can support context without supporting a conclusion. That distinction is central to the product.
+A record can provide background without supporting a property-specific conclusion.
 
 Example:
 
 - Safe: "The packet found a town conservation source that may be relevant to review routing."
 - Unsafe: "This property will require conservation approval."
 
-## Why this matters
+## Missing information
 
-Public property data is fragmented and uneven. A credible system has to model uncertainty explicitly instead of smoothing it away.
+Public property records vary in coverage and age. The report needs to show those limits.

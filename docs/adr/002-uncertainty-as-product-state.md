@@ -2,7 +2,7 @@
 
 ## Context
 
-Missing or stale source lanes are easy to hide in a clean-looking packet. That would make the output simpler, but less honest.
+Reports need to show missing and outdated records so readers know what remains uncertain.
 
 ## Decision
 
@@ -10,15 +10,15 @@ Uncertainty should appear as caution, missing, or review-needed states in the pa
 
 ## Tradeoff
 
-The output feels less magically complete. The benefit is that reviewers can see the source boundary and understand what still needs review.
+The report has more cautions to read. Those cautions identify the records that need review.
 
 ## Consequences
 
 - Missing lanes trigger packet cautions.
-- Review states become part of the artifact, not internal-only metadata.
+- Review states appear in the report as well as internal metadata.
 - The product avoids overstating public context.
 
-## Public proof
+## Code and tests
 
 - [`examples/packet_composer.py`](../../examples/packet_composer.py)
 - [`examples/packet_language.py`](../../examples/packet_language.py)
