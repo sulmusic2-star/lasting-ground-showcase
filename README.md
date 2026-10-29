@@ -1,6 +1,6 @@
 # Lasting Ground
 
-Property research with official records and their sources in view.
+A property research tool that brings questions and official source records into one interface.
 
 [Public search](https://lastingground.com) · [Interactive case study](https://sulmusic2-star.github.io/case-studies/lasting-ground/) · [Technical decisions](docs/engineering-decisions.md)
 
@@ -8,7 +8,7 @@ Property research with official records and their sources in view.
 
 ## Public examples
 
-This repository contains synthetic Python examples of source validation, evidence scoring and report assembly. The full application and its source-acquisition system are private. These examples can be inspected offline; they do not establish the application's geographic coverage or the correctness of a live property answer.
+This repository contains synthetic Python examples of source validation, evidence scoring and report assembly. The full application and its source-acquisition system are private. These examples run offline; they do not establish the application's geographic coverage or the correctness of a live property answer.
 
 ## Start with the code
 
@@ -33,7 +33,7 @@ The tests apply to the public examples. See the [testing notes](docs/testing.md)
 
 ## Scope
 
-The public search interface is available at [lastingground.com](https://lastingground.com). Answers depend on the records available for an address, and access may be required. The cover presents the actual public search interface alongside clearly labeled fictional source-check and report examples. The case study separates those captures from a fictional source-check example and its generated report. GroundTruth-Geo is a [supporting evaluation study](https://sulmusic2-star.github.io/notes/groundtruth-geo/).
+The public search interface is available at [lastingground.com](https://lastingground.com). Answers depend on the records available for an address, and access may be required. The cover and case study use screenshots of the public interface alongside labeled fictional source-check and report examples. GroundTruth-Geo is a [supporting evaluation study](https://sulmusic2-star.github.io/notes/groundtruth-geo/).
 
 This work provides informational source context. It does not replace a survey, an official determination or legal, engineering, insurance or lending advice.
 
